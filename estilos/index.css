@@ -6,7 +6,8 @@
 :root{
   --blue: #0e0e63e0;
   --gray-blue: #26264e;
-  --shadow-blue: 0px 2px 4px 0px #262683c4;
+  --blue-section: 0px 2px 4px 0px #262683c4;
+  --gray-section: 0px 5px 6px 0px #c1c1c1;
 }
 
 header{
@@ -39,6 +40,7 @@ header{
   flex-wrap: wrap;
   padding: 5%;
   text-align: center;
+  box-shadow: var(--blue-section);
 }
 .Profile-image-container{
   margin: 50px auto;
@@ -60,15 +62,13 @@ header{
   text-decoration: underline;
 }
 #Projects{
+  padding: 5%;
   text-align: center;
   background-color: #e2e2e2;
   height: auto;
-
+  box-shadow: var(--gray-section);
 }
-.project-title{
-  padding-top: 7px;
-}
-.project-article-container{
+.project-articles-container{
   justify-content: space-evenly;
   display: grid;
   grid-template: 1fr;
@@ -76,12 +76,31 @@ header{
   padding: 8px 0px ;
 }
 .project-article{
-  padding: 10px auto;
+  padding: 4px 8px 4px 14px;
+  margin: 5px auto;
+  background-color: #c6c6c6;
+  border: solid 1.2px;
+  border-color: #b1b1b1;
+  border-radius: 3px;
+}
+.project-article:hover{
+  box-shadow: 2px 3px 4px 0px #989898;
 }
 .image-project{
   display: none;
 }
 .project-content{
   display: flex;
-  justify-content: space-around;
+}
+.button-project{
+  font-size: 13px;
+  background-color: white;
+  margin: 0 10px 0 18px;
+  padding: 2px 10px 0px 10px;
+  border: none;
+  border-radius: 2px;
+}
+.button-project a{
+  text-decoration: none;
+  color: unset;
 }
