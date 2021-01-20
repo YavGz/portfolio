@@ -44,7 +44,7 @@ header{
   margin: 50px auto;
 }
 .Profile-image{
-  width: 150px;
+  width: 120px;
   margin: 20px auto;
 }
 .hero-content p{
@@ -58,4 +58,30 @@ header{
 }
 .hero-content a:hover{  
   text-decoration: underline;
+}
+#Projects{
+  text-align: center;
+  background-color: #e2e2e2;
+  height: auto;
+
+}
+.project-title{
+  padding-top: 7px;
+}
+.project-article-container{
+  justify-content: space-evenly;
+  display: grid;
+  grid-template: 1fr;
+  grid-gap: 10px;
+  padding: 8px 0px ;
+}
+.project-article{
+  padding: 10px auto;
+}
+.image-project{
+  display: none;
+}
+.project-content{
+  display: flex;
+  justify-content: space-around;
 }
