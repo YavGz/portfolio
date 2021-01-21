@@ -111,4 +111,36 @@ header{
   background: var(--blue);
   color: #e2e2e2;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  height: auto;
+}
+#Skills h3{
+  margin: 0 auto;
+}
+.skills-grid{
+  display: grid;
+  grid-template: minmax(80px, auto) minmax(100px, auto) / 
+  minmax(50px, auto) minmax(50px, auto);
+  grid-gap: 8px;
+  margin: 10px auto;
+}
+.skill-item{
+  max-width: 100%;
+}
+.item-js{
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 80%;
+}
+.item-git{
+  background-color: #e2e2e2;
+  border-radius: 100px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 80%;
 }
