@@ -18,7 +18,13 @@ header{
   box-shadow: 0px 2px 4px 0px #26264ec4;
 }
 
-/* 13 x 16  */
+.logo-container a{
+  text-decoration: none;
+  padding-left: 15px;
+  font-family: 'Patua One', cursive;
+  color: #989898;
+  font-size: 20px;
+}
 .nav-bar, ul{
   display: flex;
   font-size: 16px;
@@ -50,6 +56,7 @@ header{
 .Profile-image{
   width: 120px;
   margin: 20px auto;
+  border-radius: 150px;
 }
 .hero-content p{
   font-size: 13px;
@@ -96,7 +103,7 @@ header{
 }
 .button-project{
   font-size: 13px;
-  background-color: white;
+  background-color: #e2e2e2;
   margin: 0 10px 0 18px;
   padding: 2px 10px 0px 10px;
   border: none;
@@ -104,7 +111,8 @@ header{
 }
 .button-project a{
   text-decoration: none;
-  color: unset;
+  color: var(--blue);
+  font-weight: bold;
 }
 #Skills{
   padding: 5%;
@@ -143,4 +151,24 @@ header{
   justify-self: center;
   align-self: center;
   width: 80%;
+}
+#Contacto{
+  padding: 5%;
+  background-color: #e2e2e2;
+}
+#Creditos-container{
+  background-color: var(--gray-blue);
+  color: #e2e2e2;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  /* grid-template-areas: js creditos ; */
+  font-size: 10px;
+}
+.creditos-cambio{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-self: self-start;
+}
+.creditos{
+  justify-self: self-end;
 }
