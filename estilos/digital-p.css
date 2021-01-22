@@ -1,0 +1,89 @@
+:root{
+  --blue: #0e0e63cf;
+  --gray-blue: #26264e;
+  --blue-section: 0px 2px 4px 0px #262683c4;
+  --gray-section: 0px 5px 6px 0px #c1c1c1;
+}
+body{
+  margin: 0%;
+}
+header{
+  position: static;
+  box-shadow: var(--blue-section);
+}
+main{
+  padding: 5%;
+  background-color: #c6c6c6;
+}
+.project-description-container{
+  border: solid 2px;
+  background-color: #b2b2b2;
+  border-color: #999999;
+  border-radius: 10px;
+  padding: 3%;
+}
+.project-image-container{
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  margin: 0 auto;
+}
+.project-image-container img{
+  width: 100%;
+}
+.project-description{
+  padding: 5%;
+}
+.project-description p{
+  line-height: 18px;
+}
+.buttons-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.button-link{
+  font-size: 13px;
+  background-color: #070770 ;
+  margin: 0 10px 0 18px;
+  padding: 8px 10px 0px 10px;
+  border: none;
+  border-radius: 2px;
+}
+.button-link img{
+  width: 30px;
+}
+.button-link a{
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-evenly;
+}
+.button-link p{
+  color: #e2e2e2;
+  /* display: flex; */
+  align-self: center;
+}
+
+.button-git{
+  font-size: 13px;
+  background-color: #e2e2e2;
+  margin: 0 10px 0 18px;
+  padding: 2px 10px 0px 10px;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+}
+.button-git img{
+  width: 40px;
+}
+.button-git a{
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+}
+.button-git p{
+  margin: 0 auto;
+  padding-left: 5px;
+  align-self: center;
+}

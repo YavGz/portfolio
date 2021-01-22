@@ -162,25 +162,19 @@ header{
 .contact-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
-  /* grid-template-areas: 
-    "gmail gmail twitter twitter "
-    "n insta insta n"; */
 }
 .item-contact-mail{
-  /* grid-area: gmail; */
+  padding: 2%;
 }
 .item-contact-mail img{
-  max-width: 90px;
-}
-.item-contact-tw{
-  /* grid-area: twitter; */
+  width: 90px;
+  padding: 5px;
+  padding-left: 0px;
+  text-align: center;
 }
 .item-contact-tw img{
   max-width: 100px;
-}
-.item-contact-ig{
-  /* grid-area: insta; */
+  padding-left: 5px;
 }
 .item-contact-ig img{
   max-width: 100px;
