@@ -16,6 +16,8 @@ header{
   justify-content: space-between;
   padding: 5px;
   box-shadow: 0px 2px 4px 0px #26264ec4;
+  position: fixed;
+  width: 100vw;
 }
 
 .logo-container a{
@@ -49,6 +51,7 @@ header{
   padding: 5%;
   text-align: center;
   box-shadow: var(--blue-section);
+  padding-top: 10%;
 }
 .Profile-image-container{
   margin: 50px auto;
@@ -156,19 +159,49 @@ header{
   padding: 5%;
   background-color: #e2e2e2;
 }
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  /* grid-template-areas: 
+    "gmail gmail twitter twitter "
+    "n insta insta n"; */
+}
+.item-contact-mail{
+  /* grid-area: gmail; */
+}
+.item-contact-mail img{
+  max-width: 90px;
+}
+.item-contact-tw{
+  /* grid-area: twitter; */
+}
+.item-contact-tw img{
+  max-width: 100px;
+}
+.item-contact-ig{
+  /* grid-area: insta; */
+}
+.item-contact-ig img{
+  max-width: 100px;
+}
 #Creditos-container{
   background-color: var(--gray-blue);
   color: #e2e2e2;
   display: grid;
   grid-template: 1fr / 1fr 1fr;
-  /* grid-template-areas: js creditos ; */
+  grid-template-areas: "cambio creditos" ;
   font-size: 10px;
+  padding: 1% 4%;  
 }
 .creditos-cambio{
   display: flex;
   flex-wrap: nowrap;
-  justify-self: self-start;
+  display: none;
+  justify-content: space-evenly;
+  grid-area: cambio;
 }
 .creditos{
-  justify-self: self-end;
+  text-align: right;
+  grid-area: creditos;
 }
