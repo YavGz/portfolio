@@ -1,0 +1,32 @@
+header{
+  background-color: var(--gray-blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  box-shadow: 0px 2px 4px 0px #26264ec4;
+  position: fixed;
+  width: 100vw;
+}
+
+.logo-container a{
+  text-decoration: none;
+  padding-left: 15px;
+  font-family: 'Patua One', cursive;
+  color: #989898;
+  font-size: 20px;
+}
+.nav-bar, ul{
+  display: flex;
+  font-size: 16px;
+}
+.nav-bar, li{
+  margin: 0 10px;
+  list-style: none;
+}
+.nav-bar li a{
+  color: white;
+  text-decoration: none;
+}
+.nav-bar li a:hover{  
+  text-decoration: underline;
+}
