@@ -1,7 +1,7 @@
 * {
-  margin: 0%;
-  padding: 0%;
-  font-family: "Heebo", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -9,29 +9,42 @@ html {
 }
 
 header {
-  background-color: var(--gray-blue);
+  width: 100%;
+  padding: 1rem 0;
   display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  box-shadow: 0px 2px 4px 0px #26264ec4;
-  position: fixed;
-  width: 100vw;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #14274e;
 }
 
+.logo-container {
+  display: flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(12, 12, 12, 0.4), -0.16rem -0.16rem 0.25rem 0rem rgba(230, 230, 230, 0.4);
+}
+.logo-container:hover {
+  background-color: #162b56;
+}
 .logo-container a {
   text-decoration: none;
-  padding-left: 15px;
-  font-family: "Patua One", cursive;
-  color: #989898;
-  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  color: #1f61b8;
+  font-size: 2.2rem;
 }
 
 .nav-bar, ul {
   display: flex;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .nav-bar, li {
+  text-align: center;
   margin: 0 10px;
   list-style: none;
 }
@@ -45,7 +58,7 @@ header {
   text-decoration: underline;
 }
 
-.Hero {
+.hero {
   background-color: var(--blue);
   color: white;
   display: flex;

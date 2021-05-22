@@ -1,25 +1,41 @@
 header{
-  background-color: var(--gray-blue);
+  width: 100%;
+  padding: 1rem 0;
   display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  box-shadow: 0px 2px 4px 0px #26264ec4;
-  position: fixed;
-  width: 100vw;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $principal-color;
+}
+.logo-container {
+  display: flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem $black-shadow ,
+  -0.16rem -0.16rem 0.25rem 0rem $white-shadow;
+
+  &:hover {
+    background-color: lighten($principal-color, 2%);
+  }
+  & a{
+   text-decoration: none;
+   font-family: 'Rubik', sans-serif;
+   font-weight: 600;
+   color: $cta-color;
+   font-size: 2.2rem;
+ }
 }
 
-.logo-container a{
-  text-decoration: none;
-  padding-left: 15px;
-  font-family: 'Patua One', cursive;
-  color: #989898;
-  font-size: 20px;
-}
 .nav-bar, ul{
   display: flex;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .nav-bar, li{
+  text-align: center;
   margin: 0 10px;
   list-style: none;
 }
