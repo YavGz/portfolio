@@ -9,7 +9,8 @@ html {
 }
 
 header {
-  width: 100%;
+  min-width: 100%;
+  height: 4.5rem;
   padding: 1rem 0;
   display: flex;
   text-align: center;
@@ -25,10 +26,10 @@ header {
   border-radius: 5rem;
   align-items: center;
   justify-content: center;
-  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(12, 12, 12, 0.4), -0.16rem -0.16rem 0.25rem 0rem rgba(230, 230, 230, 0.4);
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(12, 12, 12, 0.4), -0.16rem -0.16rem 0.25rem 0rem rgba(230, 230, 230, 0.3);
 }
 .logo-container:hover {
-  background-color: #162b56;
+  box-shadow: inset 0.15rem 0.15rem 0.3rem 0.15rem rgba(12, 12, 12, 0.4), inset -0.1rem -0.1rem 0.2rem 0rem rgba(230, 230, 230, 0.3);
 }
 .logo-container a {
   text-decoration: none;
@@ -38,24 +39,33 @@ header {
   font-size: 2.2rem;
 }
 
-.nav-bar, ul {
+.nav-bar ul {
+  min-width: 18rem;
+  margin-right: -2rem;
   display: flex;
+  justify-content: space-between;
   font-size: 1.6rem;
 }
-
-.nav-bar, li {
-  text-align: center;
-  margin: 0 10px;
+.nav-bar ul li {
+  display: flex;
+  align-items: center;
   list-style: none;
+  justify-content: center;
 }
-
-.nav-bar li a {
-  color: white;
+.nav-bar ul li :hover {
+  box-shadow: inset 0.15rem 0.15rem 0.3rem 0.15rem rgba(12, 12, 12, 0.4), inset -0.1rem -0.1rem 0.2rem 0rem rgba(230, 230, 230, 0.3);
+}
+.nav-bar ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #bfbfbf;
   text-decoration: none;
-}
-
-.nav-bar li a:hover {
-  text-decoration: underline;
+  min-width: 7.5rem;
+  min-height: 2.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(12, 12, 12, 0.4), -0.16rem -0.16rem 0.25rem 0rem rgba(230, 230, 230, 0.3);
 }
 
 .hero {

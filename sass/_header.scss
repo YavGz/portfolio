@@ -1,5 +1,6 @@
 header{
-  width: 100%;
+  min-width: 100%;
+  height: 4.5rem;
   padding: 1rem 0;
   display: flex;
   text-align: center;
@@ -14,12 +15,9 @@ header{
   border-radius: 5rem;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem $black-shadow ,
-  -0.16rem -0.16rem 0.25rem 0rem $white-shadow;
-
+  @include neo-out;
   &:hover {
-    background-color: lighten($principal-color, 2%);
+    @include neo-in;
   }
   & a{
    text-decoration: none;
@@ -30,19 +28,29 @@ header{
  }
 }
 
-.nav-bar, ul{
+.nav-bar ul{
+  min-width: 18rem;
+  margin-right: -2rem;
   display: flex;
+  justify-content: space-between;
   font-size: 1.6rem;
-}
-.nav-bar, li{
-  text-align: center;
-  margin: 0 10px;
-  list-style: none;
-}
-.nav-bar li a{
-  color: white;
-  text-decoration: none;
-}
-.nav-bar li a:hover{  
-  text-decoration: underline;
+  & li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    :hover{
+      @include neo-in;
+    }
+    & a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: $lightgrey;
+      text-decoration: none;
+      @include boton;
+      @include neo-out;
+    }
+  }
 }
