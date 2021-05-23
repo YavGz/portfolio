@@ -1,31 +1,39 @@
 .hero{
-  background-color: var(--blue);
-  color: white;
+  min-width: 32rem;
+  width: 100%;
+  color: $lightgrey;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 5%;
   text-align: center;
-  box-shadow: var(--blue-section);
-  padding-top: 10%;
 }
-.Profile-image-container{
-  margin: 50px auto;
+
+.Profile__container_image {
+  min-width: 15rem;
+  min-height: 15rem;
+  max-width: 18rem;
+  margin: 1.2rem auto 0 auto;
+  border-radius: 15rem;
+  filter: opacity(0.5);
 }
-.Profile-image{
-  width: 120px;
-  margin: 20px auto;
-  border-radius: 150px;
-}
-.hero-content p{
-  font-size: 13px;
-  font-weight: 300;
-}
-.hero-content a{
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-}
-.hero-content a:hover{  
-  text-decoration: underline;
+
+.hero-content {
+  width: 90%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  text-align: left;
+  padding: 1rem 1.2rem;
+  @include neo-in-min;
+  p{
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  a{
+    text-decoration: none;
+    color: $lightgrey;
+    font-weight: 600;
+    :hover{  
+      text-decoration: underline;
+    }
+  }
 }
