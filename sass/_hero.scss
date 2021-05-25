@@ -1,5 +1,7 @@
 .hero{
   min-width: 32rem;
+  max-width: 70rem;
+  margin: 0 auto;
   width: 100%;
   color: $lightgrey;
   display: flex;
@@ -14,7 +16,7 @@
   max-width: 18rem;
   margin: 1.2rem auto 0 auto;
   border-radius: 15rem;
-  filter: opacity(0.5);
+  filter: opacity(0.6);
 }
 
 .hero-content {
@@ -23,9 +25,9 @@
   border-radius: 1rem;
   text-align: left;
   padding: 1rem 1.2rem;
-  @include neo-in-min;
+  @include neo-in;
   p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300;
   }
   a{
