@@ -19,16 +19,21 @@
   filter: opacity(0.6);
 }
 
-.hero-content {
+.hero__content {
   width: 90%;
   margin-top: 1rem;
   border-radius: 1rem;
   text-align: left;
   padding: 1rem 1.2rem;
   @include neo-in;
+  h1 {
+    font-size: map-get($map: $fs, $key: normal);
+    line-height: 2.5rem;
+  }
   p{
-    font-size: 1.6rem;
-    font-weight: 300;
+    font-size: map-get($map: $fs, $key: small);
+    font-weight: 400;
+    line-height: 2rem;
   }
   a{
     text-decoration: none;

@@ -33,24 +33,21 @@ header{
   margin-right: -2rem;
   display: flex;
   justify-content: space-between;
-  font-size: 1.6rem;
   & li{
     display: flex;
     align-items: center;
-    list-style: none;
     justify-content: center;
+    list-style: none;
     :hover{
       @include neo-in-min;
     }
     & a{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      color: $lightgrey;
-      text-decoration: none;
       @include boton;
       @include neo-out-min;
     }
   }
+}
+
+.button__contact {
+  font-weight: 500;
 }

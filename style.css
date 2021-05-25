@@ -58,28 +58,32 @@ header {
   margin-right: -2rem;
   display: flex;
   justify-content: space-between;
-  font-size: 1.6rem;
 }
 .nav-bar ul li {
   display: flex;
   align-items: center;
-  list-style: none;
   justify-content: center;
+  list-style: none;
 }
 .nav-bar ul li :hover {
   box-shadow: inset 0.15rem 0.15rem 0.3rem 0.15rem rgba(12, 12, 12, 0.4), inset -0.1rem -0.1rem 0.2rem 0rem rgba(230, 230, 230, 0.4);
 }
 .nav-bar ul li a {
+  min-width: 7.5rem;
+  max-width: 10rem;
+  min-height: 3.5rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  color: #bfbfbf;
   text-decoration: none;
-  min-width: 7.5rem;
-  min-height: 3.5rem;
-  border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem rgba(12, 12, 12, 0.4), -0.16rem -0.16rem 0.25rem 0rem rgba(230, 230, 230, 0.4);
+}
+
+.button__contact {
+  font-weight: 500;
 }
 
 .hero {
@@ -103,7 +107,7 @@ header {
   filter: opacity(0.6);
 }
 
-.hero-content {
+.hero__content {
   width: 90%;
   margin-top: 1rem;
   border-radius: 1rem;
@@ -111,16 +115,21 @@ header {
   padding: 1rem 1.2rem;
   box-shadow: inset 0.15rem 0.15rem 0.3rem 0.15rem rgba(12, 12, 12, 0.4), inset -0.15rem -0.15rem 0.2rem 0rem rgba(230, 230, 230, 0.4);
 }
-.hero-content p {
-  font-size: 1.6rem;
-  font-weight: 300;
+.hero__content h1 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
 }
-.hero-content a {
+.hero__content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.hero__content a {
   text-decoration: none;
   color: #bfbfbf;
   font-weight: 600;
 }
-.hero-content a :hover {
+.hero__content a :hover {
   text-decoration: underline;
 }
 
@@ -131,13 +140,17 @@ header {
   height: auto;
 }
 .projects h3 {
-  font-size: 2rem;
-  padding: 2rem 0 1.5rem;
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  font-family: "Teko", sans-serif;
+  padding-top: 2rem;
 }
 
 .project__cards__container {
+  min-width: 30rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   grid-gap: 1.5rem;
   justify-content: space-evenly;
   padding: 1rem 0;
@@ -155,66 +168,56 @@ header {
   display: none;
 }
 
-.project__card__content {
+.project__card__content h3 {
+  font-size: 2.4rem;
+  padding: 0;
+  line-height: 2.4rem;
+}
+.project__card__content p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding: 1rem 0;
+}
+
+.project__card__buttons {
   display: flex;
+  justify-content: space-evenly;
 }
-
-.button-project {
-  font-size: 13px;
-  background-color: #e2e2e2;
-  margin: 0 10px 0 18px;
-  padding: 2px 10px 0px 10px;
-  border: none;
-  border-radius: 2px;
-}
-
-.button-project a {
+.project__card__buttons a {
+  min-width: 7.5rem;
+  max-width: 10rem;
+  min-height: 3.5rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  color: var(--blue);
-  font-weight: bold;
+  box-shadow: inset 0.15rem 0.15rem 0.3rem 0.15rem rgba(12, 12, 12, 0.4), inset -0.1rem -0.1rem 0.2rem 0rem rgba(230, 230, 230, 0.4);
 }
 
-#Skills {
-  padding: 5%;
-  background: var(--blue);
-  color: #e2e2e2;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+.skills {
+  width: 90%;
+  margin: 0 auto;
+  min-width: 30rem;
+  text-align: left;
   height: auto;
 }
+.skills h3 {
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  font-family: "Teko", sans-serif;
+  padding-top: 1rem;
+  margin: 0;
+}
 
-#Skills h3 {
+.skills__container {
+  min-width: 15rem;
+  min-height: 5rem;
   margin: 0 auto;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template: minmax(80px, auto) minmax(100px, auto)/minmax(50px, auto) minmax(50px, auto);
-  grid-gap: 8px;
-  margin: 10px auto;
-}
-
-.skill-item {
-  max-width: 100%;
-}
-
-.item-js {
-  text-align: center;
   display: flex;
-  justify-self: center;
-  align-self: center;
-  width: 80%;
-}
-
-.item-git {
-  background-color: #e2e2e2;
-  border-radius: 100px;
-  display: flex;
-  justify-self: center;
-  align-self: center;
-  width: 80%;
 }
 
 .contacto {

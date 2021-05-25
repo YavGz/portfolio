@@ -14,6 +14,16 @@ $lightgrey: #bfbfbf;
 $black-shadow: rgba(12, 12, 12, 0.4);
 $white-shadow: rgba(230, 230, 230, 0.4);
 
+// --------fonts
+
+$fs : (
+  big: 2.8rem,
+  medium: 2.4rem,
+  normal: 1.8rem,
+  small: 1.6rem
+);
+
+
 * {
   margin: 0;
   padding: 0;

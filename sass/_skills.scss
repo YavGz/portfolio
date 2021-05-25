@@ -1,41 +1,27 @@
-#Skills{
-  padding: 5%;
-  background: var(--blue);
-  color: #e2e2e2;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  height: auto;
-}
-#Skills h3{
+.skills{
+  width: 90%;
   margin: 0 auto;
+  min-width: 30rem;
+  text-align: left;
+  height: auto;
+  h3 {
+    @include  titles;
+    padding-top: 1rem;
+    margin: 0;
+  }
 }
-.skills-grid{
-  display: grid;
-  grid-template: minmax(80px, auto) minmax(100px, auto) / 
-  minmax(50px, auto) minmax(50px, auto);
-  grid-gap: 8px;
-  margin: 10px auto;
-}
-.skill-item{
-  max-width: 100%;
-}
-.item-js{
-  text-align: center;
+
+.skills__container{
+  min-width: 15rem;
+  min-height: 5rem;
+  margin: 0 auto;
   display: flex;
-  justify-self: center;
-  align-self: center;
-  width: 80%;
+  // justify-self: center;
+  // justify-content: center;
+  // text-align: left;
 }
-.item-git{
-  background-color: #e2e2e2;
-  border-radius: 100px;
-  display: flex;
-  justify-self: center;
-  align-self: center;
-  width: 80%;
-}
+
+
 
 
 
