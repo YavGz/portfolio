@@ -1,24 +1,25 @@
-.contacto{
-  padding: 6%;
-  background-color: #e2e2e2;
+.contact{
+  width: 90%;
+  margin: 0 auto;
+  h3 {
+    @include titles
+  }
 }
-.contact-grid{
+.contact__grid{
   display: grid;
+  min-width: 32rem;
+  max-width: 80rem;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  align-items: center;
 }
-.item-contact-mail{
-  padding: 2%;
-}
-.item-contact-mail img{
-  width: 90px;
-  padding: 5px;
-  padding-left: 0px;
-  text-align: center;
-}
-.item-contact-tw img{
-  max-width: 100px;
-  padding-left: 5px;
-}
-.item-contact-ig img{
-  max-width: 100px;
+.item__contact {
+  img{
+    width: 10rem;
+    text-align: center;
+  }
+  &-mail img{
+      width: 9rem;
+  }
 }

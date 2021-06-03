@@ -31,4 +31,15 @@
   display: flex;
   justify-content: left;
   font-size: map-get($map: $fs, $key: x-small);
+  p {
+    height: 2.5rem;
+    display: flex;
+    align-content: center;
+  }
+  &__row {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0 0.2rem 0 0;
+    filter: opacity(0.85);
+  }
 }
