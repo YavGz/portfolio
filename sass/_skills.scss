@@ -12,12 +12,7 @@
 }
 
 .skills__container{
-  // min-width: 15rem;
-  // max-width: 32rem;
-  // min-height: 5rem;
-  // margin: 1rem auto;
-  // display: grid;
-  // grid-template: auto / repeat(2, 1fr);
+  justify-content: center;
   & div {
     max-width: 100%;
   }
