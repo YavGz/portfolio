@@ -5,21 +5,13 @@
     @include titles
   }
 }
-.contact__grid{
-  display: grid;
-  min-width: 32rem;
-  max-width: 80rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  padding: 1rem;
-  align-items: center;
-}
 .item__contact {
   img{
-    width: 10rem;
+    width: 100%;
     text-align: center;
   }
   &-mail img{
-      width: 9rem;
+      width: 89%;
+      padding-top: 4%;
   }
 }
