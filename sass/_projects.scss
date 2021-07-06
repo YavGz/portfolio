@@ -8,14 +8,9 @@
     padding-top: 2rem;
   }
 }
-.project__cards__container{
-  min-width: 30rem;
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 1.5rem;
-  justify-content: space-evenly;
-  padding: 1rem 0 ;
-}
+// .project__cards__container{
+
+// }
 .project__card{
   min-width: 30rem;
   max-width: 35rem;
@@ -46,5 +41,6 @@
   a {
     @include boton;
     @include neo-in-min;
+    color: $lightgrey;
   }
 }
