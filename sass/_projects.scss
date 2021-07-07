@@ -15,6 +15,7 @@
   min-width: 30rem;
   max-width: 35rem;
   padding: 1rem;
+  padding-bottom: 1.5rem;
   border-radius: 0.5rem;
   @include neo-out-min;
 }
@@ -42,5 +43,9 @@
     @include boton;
     @include neo-in-min;
     color: $lightgrey;
+    &:hover {
+      @include neo-out-min;
+    }
   }
+  
 }
