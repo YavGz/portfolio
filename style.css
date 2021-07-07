@@ -23,6 +23,13 @@ body {
   grid-template-rows: repeat(auto, 4);
 }
 
+header .navbar {
+  background-color: #182c52;
+}
+header .navbar a {
+  font-size: 1.8rem;
+}
+
 .hero {
   color: #bfbfbf;
 }

@@ -14,14 +14,33 @@
   <title>Jav Gz</title>
 </head>
 <body>
-  <header class="navbar">
-    <div class="container-fluid">
-
-      
-    </div>
+  <header id="header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-2">
+      <div class="container">
+        <a class="navbar-brand btn" href="#header">Jav Gz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#Hero">Home</a>
+            </li>
+          </ul>
+          <ul class="d-flex justify-content-start justify-content-lg-end navbar-nav mb-2 mb-lg-0 col-md-6">
+            <li class="nav-item">
+              <a class="nav-link active" href="#Projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#Contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  <main class="principal__grid">
-    <section class="hero" id="Hero">
+  <main class="principal__grid mt-5">
+    <section class="hero mt-3 mt-md-4" id="Hero">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -47,11 +66,10 @@
         </div>
       </div>
     </section>
-    <section id="Projects" class="projects">
-      <h3 class="mb-md-4 mb-4">Proyectos</h3>
+    <section class="projects" id="Projects" >
       <!-- cards  -->
       <div class="container content-center">
-        
+        <h3 class="mb-md-4 mb-4">Proyectos</h3>        
         <div class="project__cards__container row mb-md-2">
           <div class="project__card col-12 col-md-5 me-md-3 mb-4">
             <figure class="project__card__image">
@@ -91,9 +109,9 @@
       <!-- cards  -->
     </section>
     <section class="skills" id="Skills">
-      <h3>Habilidades</h3>
       <!-- skills -->
       <div class="container">
+        <h3>Habilidades</h3>
         <div class="row">
           <div class="col-12 col-md-8 offset-md-2">
             <div class="container skills__container">
@@ -163,8 +181,8 @@
       <!-- skills -->
     </section>
     <section class="contact" id="Contacto">
-      <h3 class="mb-md-4">Trabajemos juntos!</h3>
       <div class="container">
+        <h3 class="mb-md-4">Trabajemos juntos!</h3>
         <div class="row">
           <div class="col-12 col-md-8 offset-md-2">
             <!-- items-de-contacto -->
