@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./style.css" media="screen and (min-width: 319px)">
   <title>Jav Gz</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-target="#navbar">
   <header id="header">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-2">
       <div class="container">
@@ -29,17 +29,17 @@
           </ul>
           <ul class="d-flex justify-content-start justify-content-lg-end navbar-nav mb-2 mb-lg-0 col-md-6">
             <li class="nav-item">
-              <a class="nav-link active" href="#Projects">Proyectos</a>
+              <a class="nav-link " href="#Projects">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#Contacto">Contacto</a>
+              <a class="nav-link " href="#Contacto">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <main class="principal__grid mt-5">
+  <main class="principal__grid mt-5 pt-lg-5">
     <section class="hero mt-3 mt-md-4" id="Hero">
       <div class="container">
         <div class="row">
@@ -68,43 +68,58 @@
     </section>
     <section class="projects" id="Projects" >
       <!-- cards  -->
-      <div class="container content-center">
-        <h3 class="mb-md-4 mb-4">Proyectos</h3>        
-        <div class="project__cards__container row mb-md-2">
-          <div class="project__card col-12 col-md-5 me-md-3 mb-4">
+      <div class="container">
+        <h3 class="mb-md-4 mb-4">Proyectos</h3>  
+        <!-- contentar cards -->
+        <div class="project__cards__container justify-content-evenly row mb-md-2">
+          <!-- cards  -->
+          <div class="project__card col-12 col-md-5 mb-4">
             <figure class="project__card__image">
-              <img class="project__card__image" src="" alt="Imagen del proyecto">
+              <img class="project__card__image" src="./assets/images/PSFix_20210430_200053 (5) (2)~2.jpg" alt="Imagen del proyecto">
             </figure>
             <div class="project__card__content">
-              <h3>Batatabit</h3>
-              <p>Landing page created for a cryptocurrency service application. 
-                (100% responsive design)</p>
+              <h3>Platzi Bootstrap</h3>
+              <p>Landing page para info de futuro evento de platzi (Demo)</p>
               <div class="project__card__buttons">
-                  <a href="#">Codigo</a>
-                  <a href="./digital-product.html">
+                  <a href="https://github.com/Javier-GT-Yav/PlatziBootstarp/tree/main" target="_blank">Repo</a>
+                  <a href="https://javier-gt-yav.github.io/PlatziBootstarp/" target="_blank">
                   Abrir
                 </a>
               </div>
             </div>
           </div>
-          <div class="project__card col-12 col-md-5 ms-md-3 mb-4">
+          <div class="project__card col-12 col-md-5 mb-4">
             <figure class="project__card__image">
-              <img class="project__card__image" src="" alt="Imagen del proyecto">
+              <img class="project__card__image" src="./assets/images/PSFix_20210430_200053 (5) (2)~2.jpg" alt="Imagen del proyecto">
             </figure>
             <div class="project__card__content">
               <h3>Batatabit</h3>
               <p>Landing page created for a cryptocurrency service application. 
-                (100% responsive design)</p>
+              </p>
               <div class="project__card__buttons">
-                  <a href="#">Codigo</a>
-                  <a href="./digital-product.html">
+                  <a href="https://github.com/Javier-GT-Yav/Mobile-First" target="_blank">Repo</a>
+                  <a href="https://javier-gt-yav.github.io/Mobile-First/" target="_blank">
                   Abrir
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      
+          <div class="project__card col-12 col-md-5 mb-4">
+            <figure class="project__card__image">
+              <img class="project__card__image" src="" alt="Imagen del proyecto">
+            </figure>
+            <div class="project__card__content">
+              <h3>Digital Product</h3>
+              <p>Venta de producto digital (unicamente demo)</p>
+              <div class="project__card__buttons">
+                  <a href="https://github.com/Javier-GT-Yav/Digital_product" target="_blank">Repo</a>
+                  <a href="https://javier-gt-yav.github.io/Digital_product/" target="_blank">
+                  Abrir
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>   
       </div>
       <!-- cards  -->
     </section>
@@ -112,9 +127,9 @@
       <!-- skills -->
       <div class="container">
         <h3>Habilidades y Tech.</h3>
-        <div class="row">
-          <div class="col-12 col-md-8 offset-md-2">
-            <div class="container skills__container">
+        <div class="row mb-2">
+          <div class="col-12 col-md-8 offset-md-2 p-0" >
+            <div class="container skills__container p-0">
               <div class="row ms-md-5">
                 <div class="col col-6">
                   <div class="skill__item">
@@ -141,7 +156,7 @@
                         <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
                       </picture>
                       </span> 
-                      JS ( EcmaScipt6+ )
+                      JS ( Ecma 6+ )
                     </p>
                   </div>
                 </div>
@@ -196,14 +211,14 @@
                   </a>
                 </div>
                 <div class="item__contact col-4">
-                  <a href="https://twitter.com/Yav_GT">
+                  <a href="https://www.linkedin.com/in/jav-ga/">
                     <figure> 
                       <img src="./assets/images/linked-circ-whitesvg.svg" alt="linkedin-contact">
                     </figure>
                   </a>
                 </div>
                 <div class="item__contact col-4">
-                  <a href="">
+                  <a href="https://twitter.com/Yav_GT">
                     <figure> 
                       <img src="./assets/images/twitter-circle-white.svg" alt="twitter-contact">
                     </figure>
