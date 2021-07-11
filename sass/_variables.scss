@@ -1,0 +1,43 @@
+// ------ var colors 
+$cta-color: #1f61b8;
+$principal-color: #182c52;
+$secondary-color: #394867;
+$gray-color: #9ba4b4;
+$color: #b0d1fc;
+
+// ---------- grises
+$darckgrey : #4d4d4d;
+$grey : #737373;
+$lightgrey: #bfbfbf;
+
+
+// ------------sombras 
+$black-shadow: rgba(0, 0, 0, 0.4);
+$white-shadow: rgba(245, 245, 245, 0.5);
+
+// --------fonts
+
+$fs : (
+  big: 2.8rem,
+  medium: 2.4rem,
+  normal: 1.8rem,
+  small: 1.6rem,
+  x-small: 1.4rem
+);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  color: $lightgrey;
+}
+html{
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $principal-color;
+  color: $lightgrey;
+}
