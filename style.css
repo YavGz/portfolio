@@ -1,6 +1,3 @@
-:root {
-  --mainColor: #18174d;
-}
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +11,7 @@ html {
 }
 
 body {
-  background-color: var(--mainColor);
+  background-color: #182c52;
   color: #bfbfbf;
 }
 
@@ -27,7 +24,7 @@ body {
 }
 
 header .navbar {
-  background-color: var(--mainColor);
+  background-color: #182c52;
 }
 header .navbar a {
   font-size: 1.8rem;
