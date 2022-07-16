@@ -6,4 +6,3 @@ interface, as well as enter the deployment and code of them more quickly.
 
   - To see it just click on the link: https://javier-gt-yav.github.io/portfolio/index.html
 
-(My english is not the better but I still working on it)
