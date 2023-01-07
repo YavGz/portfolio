@@ -1,3 +1,6 @@
 dist/
+sass/
 .vscode
 .map*
+.scss
+*.scss
