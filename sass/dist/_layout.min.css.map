@@ -1,1 +1,0 @@
-{"version":3,"sources":["_layout.scss"],"names":[],"mappings":"AAAA,iBACE,UAAW,MACX,UAAW,MACX,OAAQ,EAAE,KACV,QAAS,KACT,mBAAoB","file":"_layout.min.css","sourcesContent":[".principal__grid {\r\n  min-width: 32rem;\r\n  max-width: 80rem;\r\n  margin: 0 auto;\r\n  display: grid;\r\n  grid-template-rows: repeat(auto, 4);\r\n}"]}

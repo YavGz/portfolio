@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["_footer.scss"],"sourcesContent":["footer {\r\n  width: 100%;\r\n  min-height: 3rem;\r\n  padding: 1rem;\r\n}\r\n.creditos__cambio {\r\n  display: none;\r\n}\r\n.creditos {\r\n  width: auto;\r\n  display: flex;\r\n  align-content: center;\r\n  justify-content: flex-end;\r\n}"],"file":"_footer.css"}

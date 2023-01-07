@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["_botones.scss"],"sourcesContent":["@mixin boton {\r\n  min-width: 7.5rem;\r\n  min-height: 3.5rem;\r\n  border-radius: 0.5rem;\r\n}"],"file":"_botones.css"}
