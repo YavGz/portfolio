@@ -7,16 +7,28 @@
     <link rel="stylesheet" href="estilos.css">
   </head>
   <body class="modo-obscuro">
-    <header>
+    <header id="header" class="sticky">
+      <div class="logo">
+        <a href="#gap">
+          <img src="./assets/images/2791834398_Minimalist web design based on black and white tat_xl-beta-v2-2-2.png" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#section1">Sección 1</a></li>
+          <li><a href="#section3">Sección 3</a></li>
+        </ul>
+      </nav>
     </header>
-
+    <div id="gap"></div>
     <main>
-      <section class="seccion1">
+      <section id="section1" class="seccion1">
         <h1>¡Hola y bienvenido/a a mi portafolio web!</h1>
         <p>En este sitio encontrarás una muestra de los proyectos en los que he trabajado y en los que sigo trabajando. Mi objetivo es seguir aprendiendo y creciendo en el campo de la tecnología, aportando siempre mis habilidades y conocimientos en cada proyecto en el que participo.</p>
         <p>Si tienes alguna pregunta o te interesa trabajar conmigo, no dudes en ponerte en contacto a través de la sección de contacto en este sitio.</p>
       </section>
       <section class="seccion2">
+        <h2>Proyectos</h2>
         <div class="cards-container">
           <div class="card">
             <img src="imagen.jpg" alt="Imagen principal" class="card-imagen">
@@ -51,9 +63,20 @@
               </div>
             </div>
           </div>
+          <div class="card">
+            <img src="imagen.jpg" alt="Imagen principal" class="card-imagen">
+            <div class="card-contenido">
+              <h2 class="card-titulo">Título de la Card</h2>
+              <p class="card-descripcion">Descripción de la Card.</p>
+              <div class="card-botones">
+                <button class="card-boton">Botón 1</button>
+                <button class="card-boton">Botón 2</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <h1>Habilidades y Tecnologias</h1>
+        <h2>Habilidades y Tecnologias</h1>
         <div class="list">
           <ul>
             <li>Point 1</li>
@@ -70,7 +93,7 @@
         
         
       </section>
-      <section class="seccion3">
+      <section id="section3" class="seccion3">
         <h1>Tercera Sección</h1>
         <p>Seccion de contacto.</p>
       </section>
