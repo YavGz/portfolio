@@ -1,10 +1,10 @@
 /* Estilos Globales */
 * {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
   
 
@@ -16,34 +16,35 @@ body {
 /* Header */
 
 
-.sticky {
+header {
   position: fixed;
   top: 0;
   width: 100%;
   height: 50px;
-  padding: 0 10%;
+  padding: 0 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   background-color: #1f1f1f;
   box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
+  z-index: 1;
 }
 
 
-header.sticky .logo {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
+header .logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  /* align-items: center; */
+  /* justify-content: center; */
   border-radius: 60%;
   overflow: hidden;
 }
 
 .logo img {
+  width: 40px;
   height: 40px;
-  padding-left: 10px;
 }
 
 .logo a {
@@ -57,7 +58,7 @@ nav {
   align-items: center;
 }
 
-header.sticky nav ul {
+header nav ul {
   list-style-type: none;
   list-style: none;
   margin: 0;
@@ -65,44 +66,43 @@ header.sticky nav ul {
   text-align: justify;
 }
 
-li {
+header nav li {
   display: inline-block;
-  margin-left: 20px;
+  margin: 0;
 }
 
 
 
-header.sticky nav a {
+header nav a {
   display: block;
   color: #fff;
-  padding: 10px 15px;
+  padding: 0px 15px;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
 }
 
-.seccion2 h2 {
-  margin-bottom: 25px;
-}
 
 
 
 
 
-/* Estilos de Secciones */
+/* Estilos de sectiones */
 
 #gap {
   width: 100%;
-  height: 100px;
+  height: 75px;
 }
 
 main {
   width: 100%;
   height: auto;
-  padding: 0 15%;
+  /* padding: 0 15%; */
+  /* agregar padding al main a partior de tablet  */
   display: grid;
   place-content: center;
   gap: 50px;
+  justify-content: center;
 }
 
 section {
@@ -111,19 +111,47 @@ section {
   position: relative;
 }
 
-.seccion1, .seccion3 {
+.hero, .contact {
   margin-bottom: 2%;
 }
 
+/* Hero --- */
 
-/* Efecto Parallax */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 5%;
+  justify-content: center;
+}
 
-/* .seccion1, .seccion3 {
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-} */
+.hero picture {
+  justify-items: center;
+overflow-x: hidden;
+overflow-y: hidden;
+}
 
-/* Cards */ 
+.hero picture, 
+.hero picture img {
+  width: 280px;
+  border-radius: 50%;
+}
+
+.hero h1 {
+  margin: 25px auto;
+}
+
+.hero_Content {
+  max-width: 400px;
+}
+
+/* --- Hero  */
+
+/* Cards --- */ 
+
+.project_Skills h2 {
+  margin-bottom: 25px;
+}
 
 .cards-container {
   display: grid;
@@ -200,9 +228,31 @@ li {
 
 
 
-/* Media queries para dispositivos móviles */
-@media screen and (max-width: 767px) {
+/* Media queries para dispositivos desktop */
+@media screen and (min-width: 767px) {
+  header {
+    padding: 0 5%;
+  }
+
+  .hero {
+    padding: 0;
+  }
+  
+  /* main {
+    grid-template-columns: 600px;
+  } */
+
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 0 8%;
+  }
+
+  main {
+    grid-template-columns: 1150px ;
   }
 }

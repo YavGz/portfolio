@@ -1,0 +1,43 @@
+.skills {
+  width: 90%;
+  margin: 0 auto;
+  min-width: 30rem;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  height: auto;
+}
+
+.skills__grid {
+  display: grid;
+  width: 100%;
+  min-width: 30rem;
+  height: auto;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 10rem);
+  grid-template-rows: auto;
+}
+
+.skill-item {
+  max-width: 100%;
+}
+
+.item-js {
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 80%;
+}
+
+.item-git {
+  background-color: #e2e2e2;
+  border-radius: 100px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 80%;
+}
+
+/*# sourceMappingURL=_skills.css.map */

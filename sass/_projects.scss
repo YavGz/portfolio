@@ -1,0 +1,51 @@
+.projects{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem auto;
+  height: auto;
+  h3 {
+    @include titles;
+    padding-top: 2rem;
+  }
+}
+.project__cards__container{
+  justify-content: center;
+}
+.project__card{
+  min-width: 30rem;
+  max-width: 35rem;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  @include neo-out-min;
+}
+.project__card__image {
+  display: none;
+}
+
+.project__card__content{
+  & h3 {
+    font-size: map-get($map: $fs, $key: medium);
+    padding: 0;
+    line-height: 2.4rem;
+  }
+  & p {
+    font-size: map-get($map: $fs, $key: small);
+    line-height: 2rem;
+    padding: 1rem 0;
+  }
+}
+
+.project__card__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  a {
+    @include boton;
+    @include neo-in-min;
+    color: $lightgrey;
+    &:hover {
+      @include neo-out-min;
+    }
+  }
+  
+}

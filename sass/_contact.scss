@@ -1,0 +1,17 @@
+.contact{
+  width: 90%;
+  margin: 0 auto;
+  h3 {
+    @include titles
+  }
+}
+.item__contact {
+  img{
+    width: 100%;
+    text-align: center;
+  }
+  &-mail img{
+      width: 89%;
+      padding-top: 4%;
+  }
+}

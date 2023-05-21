@@ -24,14 +24,18 @@ body {
 }
 
 header .navbar {
-  background-color: #1f1f1f;
-  /* box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3); */
+  background-color: #182c52;
 }
 header .navbar a {
   font-size: 1.8rem;
 }
 header .navbar a img {
   width: 30px;
+  border-radius: 50%;
+}
+
+header a img {
+  width: 50px;
   border-radius: 50%;
 }
 
@@ -65,6 +69,10 @@ header .navbar a img {
 }
 .hero__content a :hover {
   text-decoration: underline;
+}
+
+header {
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 .projects {
