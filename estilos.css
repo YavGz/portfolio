@@ -21,14 +21,14 @@ header {
   top: 0;
   width: 100%;
   height: 50px;
-  padding: 0 3%;
+  padding: 7% 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   background-color: #1f1f1f;
   box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
-  z-index: 1;
+  z-index: 3;
 }
 
 
@@ -71,8 +71,6 @@ header nav li {
   margin: 0;
 }
 
-
-
 header nav a {
   display: block;
   color: #fff;
@@ -81,11 +79,6 @@ header nav a {
   text-decoration: none;
   font-weight: bold;
 }
-
-
-
-
-
 
 /* Estilos de sectiones */
 
@@ -147,7 +140,12 @@ overflow-y: hidden;
 
 /* --- Hero  */
 
+
 /* Cards --- */ 
+
+.project_Skills {
+  padding: 0 5%;
+}
 
 .project_Skills h2 {
   margin-bottom: 25px;
@@ -161,11 +159,22 @@ overflow-y: hidden;
 }
 
 .card {
+  position: relative;
   width: 300px;
   margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.4);
   overflow: hidden;
+}
+
+.card figure {
+  height: 75px;
+  overflow: hidden;
+  transition: all 0.4s ease-in;
+}
+
+.card figure:hover{
+  height: 150px;
 }
 
 .card-imagen {
@@ -173,13 +182,34 @@ overflow-y: hidden;
   display: block;
 }
 
-.card-contenido {
-  padding: 20px;
+.fog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 75px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  transition: all 0.4s ease-in;
+}
+.fog:hover {
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.card-titulo {
+
+.card-contenido {
+  padding: 12px;  
+  text-align: left;
+  background-color: #1f1f1f;
+  z-index: 1;
+}
+
+.project_Skills .card-titulo {
   font-size: 24px;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .card-descripcion {
@@ -200,10 +230,6 @@ overflow-y: hidden;
   cursor: pointer;
 }
 
-.card-contenido {
-  padding: 20px;
-  text-align: left; /* Añadimos esta línea para justificar el texto al lado izquierdo */
-}
 
 /*Skills section*/
 .list {
