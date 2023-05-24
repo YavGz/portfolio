@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #182c52;
+  background-color: #1f1f1f;
 }
 
 .principal__grid {
@@ -30,7 +30,7 @@ header {
   text-align: center;
   align-items: center;
   justify-content: space-around;
-  background-color: #182c52;
+  background-color: #1f1f1f;
 }
 
 .logo-container {
