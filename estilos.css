@@ -59,6 +59,7 @@ nav {
 }
 
 header nav ul {
+  display: flex;
   list-style-type: none;
   list-style: none;
   margin: 0;
@@ -94,7 +95,7 @@ main {
   /* agregar padding al main a partior de tablet  */
   display: grid;
   place-content: center;
-  gap: 50px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -232,26 +233,59 @@ overflow-y: hidden;
 
 
 /*Skills section*/
-.list {
+.list_h2 {
+  margin: 40px 0 25px 0;
+}
+
+.list_container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.list_grid {
+  min-width: 280px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 ul {
-  display: contents;
-  list-style: disc;
+  width: 100%;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 li {
-  width: 45%;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 10px;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: center;
 }
 
+/* contact section --- */
+
+.contact {
+  padding: 0% 5%;
+  margin: 0 auto 30px;
+}
+
+.icons_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact picture,
+.contact img, .contact a {
+  width: 50px;
+  height: auto;
+  overflow: hidden;
+} 
+
+/* --- contact section */
 
 
 /* Media queries para dispositivos desktop */
