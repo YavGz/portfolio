@@ -275,6 +275,7 @@ li {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 30px;
   justify-content: space-evenly;
 }
 
