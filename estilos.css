@@ -5,12 +5,25 @@
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  font-size: 62.5%;
 }
   
 
 body {
   background-color: #1f1f1f;
   color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+p, li, a{
+  font-size: 1.6rem;
 }
 
 /* Header */
@@ -20,31 +33,29 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 50px;
+  height: 5rem;
   padding: 7% 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   background-color: #1f1f1f;
-  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0.2rem 0.4rem rgba(255, 255, 255, 0.3);
   z-index: 3;
 }
 
 
 header .logo {
   display: block;
-  width: 40px;
-  height: 40px;
-  /* align-items: center; */
-  /* justify-content: center; */
+  width: 4rem;
+  height: 4rem;
   border-radius: 60%;
   overflow: hidden;
 }
 
 .logo img {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .logo a {
@@ -75,7 +86,7 @@ header nav li {
 header nav a {
   display: block;
   color: #fff;
-  padding: 0px 15px;
+  padding: 0px 1.5rem;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -85,7 +96,7 @@ header nav a {
 
 #gap {
   width: 100%;
-  height: 75px;
+  height: 7.5rem;
 }
 
 main {
@@ -95,7 +106,7 @@ main {
   /* agregar padding al main a partior de tablet  */
   display: grid;
   place-content: center;
-  gap: 40px;
+  gap: 4rem;
   justify-content: center;
 }
 
@@ -127,16 +138,16 @@ overflow-y: hidden;
 
 .hero picture, 
 .hero picture img {
-  width: 280px;
+  width: 28rem;
   border-radius: 50%;
 }
 
 .hero h1 {
-  margin: 25px auto;
+  margin: 2.5rem auto;
 }
 
 .hero_Content {
-  max-width: 400px;
+  max-width: 40rem;
 }
 
 /* --- Hero  */
@@ -149,33 +160,33 @@ overflow-y: hidden;
 }
 
 .project_Skills h2 {
-  margin-bottom: 25px;
+  margin-bottom: 5rem;
 }
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
   margin-bottom: 5%;
 }
 
 .card {
   position: relative;
-  width: 300px;
+  width: 30rem;
   margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.4);
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.2rem 0.5rem rgba(255, 255, 255, 0.4);
   overflow: hidden;
 }
 
 .card figure {
-  height: 75px;
+  height: 7.5rem;
   overflow: hidden;
   transition: all 0.4s ease-in;
 }
 
 .card figure:hover{
-  height: 150px;
+  height: 15rem;
 }
 
 .card-imagen {
@@ -187,34 +198,34 @@ overflow-y: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 75px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  width: 30rem;
+  height: 7.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
   transition: all 0.4s ease-in;
 }
 .fog:hover {
-  height: 150px;
+  height: 15rem;
   background-color: rgba(0, 0, 0, 0);
 }
 
 
 .card-contenido {
-  padding: 12px;  
+  padding: 1.2rem;  
   text-align: left;
   background-color: #1f1f1f;
   z-index: 1;
 }
 
 .project_Skills .card-titulo {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 
 .card-descripcion {
-  margin: 10px 0;
+  margin: 1rem 0;
 }
 
 .card-botones {
@@ -224,9 +235,9 @@ overflow-y: hidden;
 
 .card-boton {
   width: 49%;
-  padding: 10px;
+  padding: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   background-color: #f0f0f0;
   cursor: pointer;
 }
@@ -234,7 +245,7 @@ overflow-y: hidden;
 
 /*Skills section*/
 .list_h2 {
-  margin: 40px 0 25px 0;
+  margin: 4rem 0 2.5rem 0;
 }
 
 .list_container {
@@ -245,7 +256,7 @@ overflow-y: hidden;
 }
 
 .list_grid {
-  min-width: 280px;
+  min-width: 28rem;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -260,7 +271,7 @@ ul {
 li {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -268,23 +279,36 @@ li {
 
 .contact {
   padding: 0% 5%;
-  margin: 0 auto 30px;
+  margin: 0 auto 3rem;
 }
 
 .icons_container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
+  padding-top: 3rem;
   justify-content: space-evenly;
 }
 
-.contact picture,
-.contact img, .contact a {
-  width: 50px;
-  height: auto;
+.contact picture {
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-} 
+  border-radius: 50%;
+}
+
+.contact picture:hover{
+  box-shadow: 0px 0px 2rem 0.5rem rgba(255, 255, 255, 0.8);
+}
+
+.contact img, .contact a {
+  width: 100%;
+  height: 7rem;
+  overflow: hidden;
+}
 
 /* --- contact section */
 
@@ -299,9 +323,17 @@ li {
     padding: 0;
   }
   
-  /* main {
-    grid-template-columns: 600px;
-  } */
+  .list_container {
+    width: 60rem;
+    margin: 0 auto;
+  }
+
+  .list_grid {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: space-between; */
+    gap: 20%;
+  }
 
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
@@ -314,6 +346,6 @@ li {
   }
 
   main {
-    grid-template-columns: 1150px ;
+    grid-template-columns: 115rem;
   }
 }
