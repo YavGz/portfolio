@@ -165,9 +165,9 @@ overflow-y: hidden;
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
   margin-bottom: 5%;
+  gap: 2rem;
+  grid-template-columns: 1fr;
 }
 
 .card {
@@ -231,6 +231,8 @@ overflow-y: hidden;
 .card-botones {
   display: flex;
   justify-content: space-between;
+  font-size: 2rem
+  ;
 }
 
 .card-boton {
@@ -315,14 +317,44 @@ li {
 
 /* Media queries para dispositivos desktop */
 @media screen and (min-width: 767px) {
+  .active {
+    display: block;
+  }
+
   header {
     padding: 0 5%;
+  }
+
+  /* Hero --- */
+  
+  .hero {
+    align-items: center;
+    /* align-content: center; */
+  }
+
+  .hero_Content {
+    padding: 0 3%;
+  }
+
+  .hero_Content h1 {
+    margin-top: 0;
   }
 
   .hero {
     padding: 0;
   }
+
+  /* --- Hero  */
+
+  /* Cards --- */
+
+  .project_Skills .cards-container {
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
   
+  /* --- Cards  */
+
   .list_container {
     width: 60rem;
     margin: 0 auto;
@@ -338,7 +370,41 @@ li {
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
 }
+
+  .icons_container{
+    position: relative;
+  }
+
+  .telefone {
+    display: flex;
+    width: 40%;
+    height: 4rem;
+    border-radius: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4.5rem;
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: -0.2rem 0 0.5rem 0.3rem rgba(187, 187, 187, 0.6);
+  }
+  
+  .punta  {
+    position: relative;
+  }
+  
+  .punta div {
+    position: absolute;
+    top: -1rem;
+    right: -5.2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    transform: rotate(45deg);
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0.4rem -0.4rem 0.5rem 0.3rem rgba(187, 187, 187, 0.6);
+    z-index: -1;
+  }
 
 @media screen and (min-width: 1024px) {
   header {
@@ -348,4 +414,5 @@ li {
   main {
     grid-template-columns: 115rem;
   }
+
 }
