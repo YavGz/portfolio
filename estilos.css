@@ -22,7 +22,7 @@ h2 {
   font-size: 2.6rem;
 }
 
-p, li, a{
+p, li, a, .card-descripcion div{
   font-size: 1.6rem;
 }
 
@@ -79,12 +79,18 @@ header nav ul {
 }
 
 header nav li {
-  display: inline-block;
+  display: flex;
   margin: 0;
+  height: 2.5rem;
+  align-items: center;
+}
+header nav li:hover {
+border-radius: 1rem;
+box-shadow:0 0 3px 3px rgba(187, 187, 187, 0.6);
 }
 
 header nav a {
-  display: block;
+  display: inline-block;
   color: #fff;
   padding: 0px 1.5rem;
   text-align: center;
@@ -173,20 +179,20 @@ overflow-y: hidden;
 .card {
   position: relative;
   width: 30rem;
+  height: auto;
   margin: 0 auto;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.2rem 0.5rem rgba(255, 255, 255, 0.4);
   overflow: hidden;
+  transition: all 0.4s ease-in;
 }
+
+
 
 .card figure {
   height: 7.5rem;
   overflow: hidden;
   transition: all 0.4s ease-in;
-}
-
-.card figure:hover{
-  height: 15rem;
 }
 
 .card-imagen {
@@ -206,11 +212,6 @@ overflow-y: hidden;
   z-index: 1;
   transition: all 0.4s ease-in;
 }
-.fog:hover {
-  height: 15rem;
-  background-color: rgba(0, 0, 0, 0);
-}
-
 
 .card-contenido {
   padding: 1.2rem;  
@@ -218,6 +219,52 @@ overflow-y: hidden;
   background-color: #1f1f1f;
   z-index: 1;
 }
+
+.card-descripcion{
+  display: flex;
+  flex-wrap: wrap;
+  height: 2rem;
+  overflow: hidden;
+  box-shadow: inset 1px -4px 5px -3px rgba(255, 255, 255, 0.8);
+  transition: all 0.7s ease-in-out;
+}
+
+.card-descripcion div{
+  overflow: hidden;
+}
+
+.card_lits {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem auto;                
+}
+
+.card_lits li {
+  width: fit-content;
+}
+
+.card:hover figure {
+  height: 15rem;
+}
+
+.card:hover .fog {
+  height: 15rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card:hover .card-descripcion {
+  align-items: center;
+  box-shadow: none;
+  height: 20rem;
+}
+
+/* .card:hover .card-descripcion div {
+  max-height: 30rem;
+  overflow: hidden;
+} */
+
+/* --- Cards */
 
 .project_Skills .card-titulo {
   font-size: 2.4rem;
@@ -231,19 +278,38 @@ overflow-y: hidden;
 .card-botones {
   display: flex;
   justify-content: space-between;
-  font-size: 2rem
-  ;
+  font-size: 2rem;
+  padding: 1%;
 }
 
-.card-boton {
+/* .card-boton {
   width: 49%;
-  padding: 1rem;
+  padding: 1.5rem;
   border: none;
+  cursor: pointer;
+} */
+
+.button {
+  display: flex;
+  width: 12rem;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
   border-radius: 0.5rem;
   background-color: #f0f0f0;
-  cursor: pointer;
+  color: #1f1f1f;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
 }
 
+.button:hover {
+  color:#f0f0f0;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 0.2rem 0.2rem
+  rgba(255, 255, 255, 0.8);
+}
 
 /*Skills section*/
 .list_h2 {
@@ -312,14 +378,16 @@ li {
   overflow: hidden;
 }
 
+.telefone {
+  width: 50%;
+  display: none;
+}
+
 /* --- contact section */
 
 
 /* Media queries para dispositivos desktop */
 @media screen and (min-width: 767px) {
-  .active {
-    display: block;
-  }
 
   header {
     padding: 0 5%;
@@ -329,7 +397,6 @@ li {
   
   .hero {
     align-items: center;
-    /* align-content: center; */
   }
 
   .hero_Content {
@@ -378,8 +445,7 @@ li {
   }
 
   .telefone {
-    display: flex;
-    width: 40%;
+    display: none;
     height: 4rem;
     border-radius: 0.8rem;
     align-items: center;
@@ -390,7 +456,7 @@ li {
     box-shadow: -0.2rem 0 0.5rem 0.3rem rgba(187, 187, 187, 0.6);
   }
   
-  .punta  {
+  /* .punta  {
     position: relative;
   }
   
@@ -404,15 +470,57 @@ li {
     background-color: rgba(0, 0, 0, 1);
     box-shadow: 0.4rem -0.4rem 0.5rem 0.3rem rgba(187, 187, 187, 0.6);
     z-index: -1;
-  }
+  } */
 
 @media screen and (min-width: 1024px) {
   header {
     padding: 0 8%;
   }
 
-  main {
-    grid-template-columns: 115rem;
+  header nav {
+    width: 30rem;
+    justify-items: center;
+  }
+  
+  header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav ul li,
+  header nav ul li a{
+    width: 12.5rem;
   }
 
+  .hero {
+    padding: 0;
+    justify-content: space-evenly;
+  }
+
+  .hero .hero_Content {
+    padding: 0;
+  }
+
+  main {
+    grid-template-columns: minmax(100rem, 120rem);
+  }
+
+  /* .project_Skills {
+    justify-self: center;
+  } */
+
+  .project_Skills .cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 4rem;
+  }
+
+  .telefone {
+    width: 40%;
+  }
+}
+
+.active {
+  display: flex;
+  transition: display 0.3s;
 }
