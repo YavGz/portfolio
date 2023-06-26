@@ -282,13 +282,6 @@ overflow-y: hidden;
   padding: 1%;
 }
 
-/* .card-boton {
-  width: 49%;
-  padding: 1.5rem;
-  border: none;
-  cursor: pointer;
-} */
-
 .button {
   display: flex;
   width: 12rem;
@@ -304,11 +297,19 @@ overflow-y: hidden;
   transition: all 0.3s ease-in;
 }
 
+.primary_button {
+  background-color: #F7931A;
+  color: #f0f0f0;
+}
+
 .button:hover {
   color:#f0f0f0;
   background-color: #1f1f1f;
-  box-shadow: 0 0 0.2rem 0.2rem
-  rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0.2rem 0.2rem rgba(255, 255, 255, 0.8);
+}
+
+.primary_button:hover {
+  box-shadow: 0 0 0.2rem 0.2rem #F7931A;
 }
 
 /*Skills section*/
