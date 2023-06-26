@@ -1,297 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="robots" >
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- Bootstrap CSS -->  
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Rubik:wght@500;600&family=Teko:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" media="screen and (min-width: 319px)">
-  <title>Jav Gz</title>
-</head>
-<body data-bs-spy="scroll" data-target="#navbar">
-  <header id="header">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-2">
-      <div class="container">
-        <a class="navbar-brand btn" href="#header">
-          <img src="./assets/images/2791834398_Minimalist web design based on black and white tat_xl-beta-v2-2-2.png" alt="">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jav Gz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body class="modo-obscuro">
+    <header id="header" class="sticky">
+      <div class="logo">
+        <a href="#gap">
+          <img src="./assets/images/2791834398_Minimalist web design based on black and white tat_xl-beta-v2-2-2.png" alt="Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            </li>
-          </ul>
-          <ul class="d-flex justify-content-start justify-content-lg-end navbar-nav mb-2 mb-lg-0 col-md-6">
-            <li class="nav-item">
-              <a class="nav-link " href="#Projects">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#Contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
-  </header>
-  <main class="principal__grid mt-5 pt-lg-5">
-    <section class="hero mt-3 mt-md-4" id="Hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <!-- hero  -->
-            <div class="container">
-              <div class="row justify-content-center">
-                <!-- img  -->               
-                    <div class="col-8 col-sm-6 col-md-4">
-                      <picture id="">
-                        <img class="Profile__container_image col-12" src="./assets/images/2791834398_Minimalist web design based on black and white tat_xl-beta-v2-2-2.png" alt="Perfil de Yav">
-                      </picture>
-                    </div>
-                <!-- img  -->
-                <div class="col-12 col-md-8 hero__content ">
-                  <h1>¡Hola y bienvenido/a a mi portafolio web!</h1>
-                  <p>En este sitio encontrarás una muestra de los proyectos en los que he trabajado y en los que sigo trabajando. Mi objetivo es seguir aprendiendo y creciendo en el campo de la tecnología, aportando siempre mis habilidades y conocimientos en cada proyecto en el que participo.</p>
-                  <p>Si tienes alguna pregunta o te interesa trabajar conmigo, no dudes en ponerte en contacto a través de la sección de contacto en este sitio.</p>
-                </div>
-              </div>
-            </div>
-            <!-- hero  -->              
-          </div>
+      <nav>
+        <ul>
+          <li><a href="#section2">Proyectos</a></li>
+          <li><a href="#section3">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="gap"></div>
+    <main>
+      <section id="section1" class="hero">
+        <picture>
+          <img src="./assets/images/2791834398_Minimalist web design based on black and white tat_xl-beta-v2-2-2.png" alt="">
+        </picture>
+        <div class="hero_Content">
+          <h1>¡Hola y bienvenido/a a mi portafolio web!</h1>
+          <p>En este sitio encontrarás una algunos de los proyectos en los que he trabajado y en los que sigo trabajando. Mi objetivo es seguir aprendiendo y creciendo en el campo de la tecnología, aportando mis habilidades y conocimientos en cada proyecto en el que participo.</p>
+          <p>Te dejo la sección de contacto en la partde de abajo en caso de que estes interesdo :D .</p>
         </div>
-      </div>
-    </section>
-    <section class="projects" id="Projects" >
-      <!-- cards  -->
-      <div class="container">
-        <h3 class="mb-md-4 mb-4">Proyectos</h3>  
-        <!-- content cards -->
-        <div class="project__cards__container justify-content-evenly row mb-md-2">
-          <!-- cards  -->
-          <div class="project__card col-12 col-md-5 mb-4">
-            <figure class="project__card__image">
-              <img class="project__card__image" src="./assets/images/PSFix_20210430_200053 (5) (2)~2.jpg" alt="Imagen del proyecto">
+      </section>
+      <section id="section2" class="project_Skills">
+        <h2>Proyectos</h2>
+        <div class="cards-container">
+          <div class="card">
+            <figure>
+              <img src="./assets/images/batatabit.png" alt="Imagen principal" class="card-imagen">
+              <div class="fog"></div>
             </figure>
-            <div class="project__card__content">
-              <h3>Rick and morty Characters</h3>
-              <p>Puedes consultar informacion relevante sobre los personajes de esta serie</p>
-              <div class="project__card__buttons">
-                  <a href="https://github.com/YavGz/rick_and_morty_info" target="_blank">Repo</a>
-                  <a href="https://yavgz.github.io/rick_and_morty_info/" target="_blank">
-                  Abrir
-                </a>
+            <div class="card-contenido">
+              <h2 class="card-titulo">Batatabit</h2>
+              <div class="card-descripcion">
+                <div>Landing page creada para promocionar una aplicacion de cryptoactivos. (Demo)</div>
+                <ul class="card_list">
+                  <li>HTML 5</li>
+                  <li>CSS 3</li>
+                </ul>
+              </div>
+              <div class="card-botones">
+                <a href="https://github.com/YavGz/Mobile-First" target="_blank" class="button" >GitHub</a>
+                <a href="https://yavgz.github.io/Mobile-First/" target="_blank" class="button primary_button" >Ver Sitio</a>
               </div>
             </div>
           </div>
-          <div class="project__card col-12 col-md-5 mb-4">
-            <figure class="project__card__image">
-              <img class="project__card__image" src="./assets/images/PSFix_20210430_200053 (5) (2)~2.jpg" alt="Imagen del proyecto">
+          <div class="card">
+            <figure>
+              <img src="./assets/images/Rick_and_morty.png" alt="Imagen principal" class="card-imagen">
+              <div class="fog"></div>
             </figure>
-            <div class="project__card__content">
-              <h3>Platzi Bootstrap</h3>
-              <p>Landing page para info de futuro evento de platzi (Demo)</p>
-              <div class="project__card__buttons">
-                  <a href="https://github.com/YavGz/PlatziBootstarp/tree/main" target="_blank">Repo</a>
-                  <a href="https://yavgz.github.io/PlatziBootstarp/" target="_blank">
-                  Abrir
-                </a>
+            <div class="card-contenido">
+              <h2 class="card-titulo">Rick and Morty Inf</h2>
+              <div class="card-descripcion">
+                <div>Puedes consultar el estatus sobre algunos personajes de esta serie</div>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>Manipulación del DOM</li>
+                  <li>Consumo de API Rest</li>
+                  <li>HTML 5</li>
+                  <li>CSS 3</li>
+                </ul>
+              </div>
+              <div class="card-botones">
+                <a href="https://github.com/YavGz/rick_and_morty_info" target="_blank" class="button" >GitHub</a>
+                <a href="https://yavgz.github.io/rick_and_morty_info/" target="_blank" class="button primary_button" >Ver Sitio</a>
               </div>
             </div>
           </div>
-          <div class="project__card col-12 col-md-5 mb-4">
-            <figure class="project__card__image">
-              <img class="project__card__image" src="./assets/images/PSFix_20210430_200053 (5) (2)~2.jpg" alt="Imagen del proyecto">
+          <div class="card">
+            <figure>
+              <img src="./assets/images/yard_sale.png" alt="Imagen principal" class="card-imagen">
+              <div class="fog"></div>
             </figure>
-            <div class="project__card__content">
-              <h3>Batatabit</h3>
-              <p>Landing page creada para promocionar una aplicacion de cryptoactivos. 
-              </p>
-              <div class="project__card__buttons">
-                  <a href="https://github.com/YavGz/Mobile-First" target="_blank">Repo</a>
-                  <a href="https://yavgz.github.io/Mobile-First/" target="_blank">
-                  Abrir
-                </a>
+            <div class="card-contenido">
+              <h2 class="card-titulo">Yard Sale</h2>
+              <div class="card-descripcion">
+                <div>Pagina principal de E comerce. (Demo)</div>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>Manipulación del DOM</li>
+                  <li>HTML 5</li>
+                  <li>CSS 3</li>
+                </ul>
+              </div>
+              <div class="card-botones">
+                <a href="https://github.com/YavGz/forkJsYFrontedPractico" target="_blank" class="button" >GitHub</a>
+                <a href="https://yavgz.github.io/forkJsYFrontedPractico/" target="_blank" class="button primary_button" >Ver Sitio</a>
               </div>
             </div>
           </div>
-          <div class="project__card col-12 col-md-5 mb-4">
-            <figure class="project__card__image">
-              <img class="project__card__image" src="" alt="Imagen del proyecto">
+          <div class="card">
+            <figure>
+              <img src="./assets/images/brand.png" alt="Imagen principal" class="card-imagen">
+              <div class="fog"></div>
             </figure>
-            <div class="project__card__content">
-              <h3>Digital Product</h3>
-              <p>Venta de producto digital (unicamente demo)</p>
-              <div class="project__card__buttons">
-                  <a href="https://github.com/YavGz/Digital_product" target="_blank">Repo</a>
-                  <a href="https://yavgz.github.io/Digital_product/" target="_blank">
-                  Abrir
-                </a>
+            <div class="card-contenido">
+              <h2 class="card-titulo">Brand</h2>
+              <div class="card-descripcion">
+                <div>Venta de producto digital (Demo)
+                  Rutas mediante archivos HTML
+                </div>
+                <ul>
+                  <li>HTML 5</li>
+                  <li>CSS 3</li>
+                </ul>
+              </div>
+              <div class="card-botones">
+                <a href="https://github.com/YavGz/Digital_product" target="_blank" class="button" >GitHub</a>
+                <a href="https://yavgz.github.io/Digital_product/" target="_blank" class="button primary_button" >Ver Sitio</a>
               </div>
             </div>
           </div>
-        </div>   
-      </div>
-      <!-- cards  -->
-    </section>
-    <section class="skills" id="Skills">
-      <!-- skills -->
-      <div class="container">
-        <h3>Habilidades y Tech.</h3>
-        <div class="row mb-2">
-          <div class="col-12 col-md-8 offset-md-2 p-0" >
-            <div class="container skills__container p-0">
-              <div class="row ms-md-5">
-                <div class="col col-6">
-                  <div class="skill__item">
-                    <p><span>
-                      <picture class='skill__item__row'>
-                        <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
-                      </picture>
-                      </span> 
-                      JavaScript (ES6+)
-                    </p>
-                  </div>
-                  <div class="skill__item">
-                    <p><span>
-                      <picture class='skill__item__row'>
-                        <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
-                      </picture>
-                      </span> 
-                      POO con JavaScript
-                    </p>
-                  </div>
-                  <div class="skill__item">
-                    <p><span>
-                      <picture class='skill__item__row'>
-                        <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
-                      </picture>
-                      </span> 
-                      CSS 3
-                    </p>
-                  </div>
-                  <div class="skill__item">
-                    <p><span>
-                      <picture class='skill__item__row'>
-                        <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
-                      </picture>
-                      </span> 
-                      HTML 5
-                    </p>
-                  </div>
+          <div class="card">
+            <figure>
+              <img src="./assets/images/platzi_bootstrap.png" alt="Imagen principal" class="card-imagen">
+              <div class="fog"></div>
+            </figure>
+            <div class="card-contenido">
+              <h2 class="card-titulo">Platzi bootstrap</h2>
+              <div class="card-descripcion">
+                <div>Landing page informativa de un evento presencial.
                 </div>
-                <div class="col col-6">
-                  <div class="skill__item">
-                    <p><span>
-                      <picture class='skill__item__row'>
-                        <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
-                      </picture>
-                      </span> 
-                      Manipulaci&oacute;n del DOM JS 
-                    </p>
-                  </div>
-                  <div class="skill__item">
-                    <p><span>
-                      <picture class='skill__item__row'>
-                        <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
-                      </picture>
-                      </span> 
-                      Copnsumo de API Rest
-                    </p>
-                  </div>
-                  <div class="skill__item">
-                    <p><span>
-                      <picture class='skill__item__row'>
-                        <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
-                      </picture>
-                      </span> 
-                      Bootstrap
-                    </p>
-                  </div>
-                  <div class="skill__item">
-                    <p><span>
-                      <picture class='skill__item__row'>
-                        <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
-                      </picture>
-                      </span> 
-                      SASS (css)
-                    </p>
-                  </div>
-                  <div class="skill__item">
-                    <p><span>
-                      <picture class='skill__item__row'>
-                        <img class="skill__item__row" src=".//assets/images/row-white.svg" alt="">
-                      </picture>
-                      </span> 
-                      Responsive Design
-                    </p>
-                  </div>
+                <ul>
+                  <li>HTML 5</li>
+                  <li>CSS 3</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+              <div class="card-botones">
+                <a href="https://github.com/YavGz/PlatziBootstarp" target="_blank" class="button" >GitHub</a>
+                <a href="https://yavgz.github.io/PlatziBootstarp/" target="_blank" class="button primary_button" >Ver Sitio</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="./assets/images/google_clon.png" alt="Imagen principal" class="card-imagen">
+              <div class="fog"></div>
+            </figure>
+            <div class="card-contenido">
+              <h2 class="card-titulo">Google clon</h2>
+              <div class="card-descripcion">
+                <div>Maquetado solo para Escritorio</div>
+                <ul>
+                  <li>HTML 5</li>
+                  <li>CSS 3</li>
+                </ul>
+              </div>
+              <div class="card-botones">
+                <a href="https://github.com/YavGz/Clon_De_Google" target="_blank" class="button" >GitHub</a>
+                <a href="https://yavgz.github.io/Clon_De_Google/" target="_blank" class="button primary_button" >Ver Sitio</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- skills -->
-    </section>
-    <section class="contact" id="Contacto">
-      <div class="container">
-        <h3 class="mb-md-4">Trabajemos juntos!</h3>
-        <div class="row">
-          <div class="col-12 col-md-8 offset-md-2">
-            <!-- items-de-contacto -->
-            <div class="container">
-              <div class="row">
-                <div class="item__contact  item__contact-mail col-4">
-                  <a href="mailto:yaav.gz@gmail.com">
-                    <figure> 
-                      <img src="./assets/images/mail-white.svg" alt="Gmail-contact">
-                    </figure>
-                  </a>
-                </div>
-                <div class="item__contact col-4">
-                  <a href="https://www.linkedin.com/in/jav-ga/" target="_blank">
-                    <figure> 
-                      <img src="./assets/images/linked-circ-whitesvg.svg" alt="linkedin-contact">
-                    </figure>
-                  </a>
-                </div>
-                <div class="item__contact col-4">
-                  <a href="https://twitter.com/Yav_GT" target="_blank">
-                    <figure> 
-                      <img src="./assets/images/twitter-circle-white.svg" alt="twitter-contact">
-                    </figure>
-                  </a>
-                </div>        
-              </div>  
-            </div>
-            <!-- items-de-contacto -->
+        <h2 class="list_h2">Habilidades y Tecnologias</h1>
+        <div class="list_container">
+          <div class="list_grid" >
+            <ul>
+              <li>Git y GitHub</li>
+              <li>JavaScript ES6+</li>
+              <li>CSS 3</li>
+              <li>HTML 5</li>
+              <li>SASS</li>
+              <li>Bootstrap</li>
+            </ul>
+            <ul>
+              <li>Manipulacion del DOM</li>
+              <li>Consumo de API Rest</li>
+              <li>Mobile First</li>
+              <li>Responsive Design</li>
+              <li>Accesibilidad</li>
+              <li>Optimización</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <section id="creditos__container">
-      <div class="creditos__cambio">
-        <div id="Cambio__de__idioma">
-          <p>Idioma</p>
+      </section>
+      <section id="section3" class="contact">
+        <h2>Contacto</h2>
+        <div class="icons_container">
+          <picture>
+            <a href="mailto:gutierrez.alcantara.javier@gmail.com" target="_blank">
+              <img src="./assets/images/mail-circle-white.png" alt="">
+            </a>
+          </picture>
+          <picture>
+            <a href="https://www.linkedin.com/in/jav-ga/" target="_blank">
+              <img src="./assets/images/linkedin-circle-white.png" alt="">
+            </a>
+          </picture>
+          <picture class="phone_picture">
+            <!-- <a href=""href="tel:+52 5591622390" target="_blank"> -->
+            <a>
+              <img src="./assets/images/whatsapp.png" alt="">
+            </a>
+            <!--  -->
+          </picture>
+          <div class="telefone">
+            <p>Tel: +52 5591622390</p>
+            <!-- <div class="punta">
+              <div></div>
+            </div> -->
+          </div>
         </div>
-        <div id="new__project">
-          <p>Nuevo proyecto</p>
-        </div>
-      </div>
-      <div class="creditos">
-        <p</p>
-      </div>
-    </section>
-  </footer>
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-</body>
+      </section>
+    </main>
+    <footer>    
+    </footer>
+    <script src="./index.js"></script>
+    <!-- <script src="parallax."></script> -->
+  </body>
 </html>
