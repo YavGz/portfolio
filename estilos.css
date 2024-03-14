@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   font-size: 62.5%;
+  --light: 0.1rem 0.2rem 0.6rem rgb(235, 101, 6);
 }
   
 
@@ -22,7 +23,7 @@ h2 {
   font-size: 2.6rem;
 }
 
-p, li, a, .card-descripcion div{
+p, li, a, .card-description div{
   font-size: 1.6rem;
 }
 
@@ -170,17 +171,24 @@ overflow-y: hidden;
 }
 
 .cards-container {
-  display: grid;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   margin-bottom: 5%;
-  gap: 2rem;
-  grid-template-columns: 1fr;
+  margin-bottom: 5%;
+  justify-content: center;
+  
+  /* display: grid; */
+  /* gap: 2rem; */
+  /* grid-template-columns: 1fr; */
 }
 
 .card {
   position: relative;
   width: 30rem;
   height: auto;
-  margin: 0 auto;
+  margin: 15px;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.2rem 0.5rem rgba(255, 255, 255, 0.4);
   overflow: hidden;
@@ -220,7 +228,7 @@ overflow-y: hidden;
   z-index: 1;
 }
 
-.card-descripcion{
+.card-description{
   display: flex;
   flex-wrap: wrap;
   height: 2rem;
@@ -229,7 +237,7 @@ overflow-y: hidden;
   transition: all 0.7s ease-in-out;
 }
 
-.card-descripcion div{
+.card-description div{
   overflow: hidden;
 }
 
@@ -244,6 +252,11 @@ overflow-y: hidden;
   width: fit-content;
 }
 
+/* hovers --- */
+.card:hover {
+  box-shadow: var(--light);
+}
+
 .card:hover figure {
   height: 15rem;
 }
@@ -253,13 +266,14 @@ overflow-y: hidden;
   background-color: rgba(0, 0, 0, 0);
 }
 
-.card:hover .card-descripcion {
+.card:hover .card-description {
   align-items: center;
   box-shadow: none;
   height: 20rem;
 }
+/* --- hovers */
 
-/* .card:hover .card-descripcion div {
+/* .card:hover .card-description div {
   max-height: 30rem;
   overflow: hidden;
 } */
@@ -271,7 +285,7 @@ overflow-y: hidden;
   margin-bottom: 1rem;
 }
 
-.card-descripcion {
+.card-description {
   margin: 1rem 0;
 }
 
@@ -510,11 +524,6 @@ li {
   /* .project_Skills {
     justify-self: center;
   } */
-
-  .project_Skills .cards-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 4rem;
-  }
 
   .telefone {
     width: 40%;
