@@ -191,7 +191,7 @@ overflow-y: hidden;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.2rem 0.5rem rgba(255, 255, 255, 0.4);
   overflow: hidden;
-  transition: all 0.4s ease-in 350ms;
+  transition: all 0.4s ease-in;
   cursor:context-menu;
 }
 
@@ -200,7 +200,7 @@ overflow-y: hidden;
 .card figure {
   height: 7.5rem;
   overflow: hidden;
-  transition: all 0.4s ease-in 350ms;
+  transition: all 0.4s ease-in;
 }
 
 .card-imagen {
@@ -218,7 +218,7 @@ overflow-y: hidden;
   border-top-right-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
-  transition: all 0.4s ease-in 350ms;
+  transition: all 0.4s ease-in;
 }
 
 .card-contenido {
@@ -270,7 +270,6 @@ overflow-y: hidden;
   align-items: center;
   box-shadow: none;
   height: 20rem;
-  transition-delay: 350ms;
 }
 /* --- hovers */
 
@@ -489,6 +488,28 @@ li {
   } */
 
 @media screen and (min-width: 1024px) {
+  /* delays ---- */
+  .card {
+    transition-delay: 350ms;
+  }
+
+  .card figure {
+    transition-delay: 350ms;
+  }
+
+  .fog {
+    transition-delay: 350ms;
+  }
+
+  .card-description {
+    transition-delay: 350ms;
+  }
+  .card:hover .card-description {
+    transition-delay: 350ms;
+  }
+
+  /* ---- delays */
+  
   header {
     padding: 0 8%;
   }
