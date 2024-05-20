@@ -8,3 +8,5 @@ interface, as well as enter the deployment and code of them more quickly.
 
   - To see it just click on the link: https://yavgz.github.io/portfolio/
 
+Currently, I am working on redesigning it:
+https://www.figma.com/design/ZPjtlYEr5UUh2YXIk5xQ7J/Portfolio?node-id=0%3A1&t=hmGlSgESje7Eetea-1
