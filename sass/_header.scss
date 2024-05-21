@@ -1,8 +1,0 @@
-header{
-  .navbar {
-    background-color: $principal-color;
-    a {
-      font-size: map-get($map: $fs, $key: normal) ;
-    }
-  }
-}
