@@ -236,9 +236,9 @@
       display: flex;
       flex-wrap: wrap;
       width: 100%;
-      margin: 10px auto;
+      margin: 20px auto;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
     }
     .card {
       display: flex;
@@ -326,10 +326,32 @@
       background-color: #9f00ff33;
     }
     /* skills --- */
+    .skills_container {
+      max-width: 500px;
+      justify-content: safe;
+      gap: 35px;
+    }
     .skill {
-      width: 50px;
-      height: 50px;
-      background-color: var(--my-purple);
+      display: flex;
+      flex-wrap: wrap;
+      width: 60px;
+      height: 60px;
+      padding: 5px;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      border-radius: var(--my-radius);
+      background-color: #de7021aa;
+      box-shadow: 0 0 2px 2px #de7021aa;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      span {
+        width: 100%;
+        text-align: center;
+        font-size: var(--xs-text-mobile);
+      }
     }
     /* --- skills */
     /* --- home */
@@ -454,7 +476,7 @@
           </div>
         </div>
       </div>
-      <a href="">Más proyectos => </a>
+      <a href="#Proyectos" class="more_projects">Más proyectos => </a>
     </section>
     <section class="stack">
       <h2 class="title_section">
@@ -464,7 +486,61 @@
       <div class="skills_container">
         <div class="skill">
           <img src="" alt="">
-          <span></span>
+          <span>HTML</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>CSS</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>SASS</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>Bootstrap</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>React.Js</span>
+        </div>
+      </div>
+      <h3 class="subtitle">Aprendiendo</h3>
+      <div class="skills_container">
+        <div class="skill">
+          <img src="" alt="">
+          <span>Node.Js</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>MySql</span>
+        </div>
+      </div>
+      <h3 class="subtitle">Herramientas</h3>
+      <div class="skills_container">
+        <div class="skill">
+          <img src="" alt="">
+          <span>Git</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>GitHub</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>Vs Code</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>Terminal</span>
+        </div>
+        <div class="skill">
+          <img src="" alt="">
+          <span>Firebase</span>
         </div>
       </div>
     </section>
