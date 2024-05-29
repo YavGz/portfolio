@@ -22,6 +22,7 @@
       --tiny-title-mobile: 16px;
       --normal-text-mobile: 14px;
       --tiny-text-mobile: 12px;
+      --xs-text-mobile: 10px;
       --my-radius: 5px;
     }
     body a, body p, span, section{
@@ -115,6 +116,7 @@
     }
     /* --- header */
     /* home --- */
+    /* hero --- */ 
     .home_section {
       background-size: cover;
       background-repeat: no-repeat;
@@ -141,21 +143,23 @@
     }
     .send_email {
       display: flex;
-      width: 29rem;
-      height: 25px;
+      width: 25rem;
+      height: 22px;
       margin: 10px auto;
       justify-content: space-between;
       align-items: center;
       p {
         padding: 4px 8px;
+        font-weight: 200;
+        height: 100%;
         border-radius: var(--my-radius);
         background-color: rgba(100, 100, 100, 0.4);
-        font-size: var(--normal-text-mobile);
+        font-size: var(--tiny-text-mobile);
       }
       a {
         display: flex;
         width: 30px;
-        height: 25px;
+        height: 100%;
         justify-content: center;
         align-items: center;
         border-radius: var(--my-radius);
@@ -172,7 +176,8 @@
     }
     .contact_info {
       display: flex;
-      width: 18rem;
+      width: 15rem;
+      height: 22px;
       margin: 0 auto;
       justify-content: space-between;
       align-items: center;
@@ -181,15 +186,16 @@
         align-items: center;
         justify-content: center;
         width: 50px;
-        height: 25px;
+        height: 100%;
         margin: 0;
         border-radius: var(--my-radius);
         color: white;
-        background-color: var(--my-purple);
-        transition: box-shadow 250ms ease;
+        background-color: #9f00ff66;
+        transition: box-shadow, background-color 250ms ease;
         &:hover {
+          background-color: var(--my-purple);
           box-shadow: 0 0 3px 3px #9f00ff99;
-          transition: box-shadow 300ms ease-in-out;
+          transition: box-shadow, background-color, 300ms ease-in-out;
         }
         img {
           width: 15px;
@@ -197,9 +203,135 @@
         }
       }
     }
-    .experience {
+    /* --- hero */ 
+    .home_section section {
+      display: inline-block;
       width: 90%;
+      padding-bottom: 2rem;
     }
+    .title {
+      margin: 10px auto;
+      margin-left: 0;
+      color: var(--my-purple);
+      font-size: var(--big-title-mobile);
+      font-weight: 400;
+    }
+    .subtitle {
+      height: fit-content;
+      margin: 5px auto 0;
+      margin-top: 0;
+      margin-left: 0;
+      color: var(--my-purple);
+      font-size: var(--tiny-title-mobile);
+      font-weight: 300;
+    }
+    .title_section {
+      margin: 20px auto;
+      text-align: center;
+      color: var(--my-purple);
+      font-weight: 500;
+      font-size: large;
+    }
+    .cards_container, .skills_container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 10px auto;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      display: flex;
+      width: 100%;
+      flex-direction: row-reverse;
+      max-width: 380px;
+      min-width: 280px;
+      max-height: 220px;
+      min-height: 200px;
+      border-radius: var(--my-radius);
+      overflow: hidden;
+      text-align: left;
+      p {
+        font-size: var(--normal-text-mobile);
+        font-weight: 200;
+        
+      }
+    }
+    .project_img {
+      display: flex;
+      width: 35%;
+      height: 100%;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+    .card_content {
+      display: flex;
+      row-gap: 0px;
+      flex-wrap: wrap;
+      width: 65%;
+      height: 100%;
+      padding-right: 8px;
+      text-wrap: pretty;
+    }
+    .tag {
+      display: flex;
+      min-width: 65px;
+      height: 20px;
+      margin: 4px 4px 6px 4px;
+      padding: 1px 8px;
+      font-weight: 200;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 12px;
+      border: 1px solid #fff;
+      font-size: var(--xs-text-mobile);
+      font-weight: 200;
+      box-shadow: inset 0 0 4px 0px whitesmoke, 0 0 4px 0px whitesmoke;
+    }
+    .card_content__links {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      a {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transition: background-color, box-shadow 200ms ease-in-out;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      ul p {
+        color: var(--my-purple);
+        font-weight: 400;
+      }
+      ul:nth-child(1) {
+        display: flex;
+        width: 70px;
+        height: auto;
+        padding-left: 3px;
+        padding-bottom: 3px;
+        justify-content: space-between;
+      }
+    }
+    .card_content__links a:hover {
+      box-shadow: 0 0 2px 1px var(--my-purple);
+      background-color: #9f00ff33;
+    }
+    /* skills --- */
+    .skill {
+      width: 50px;
+      height: 50px;
+      background-color: var(--my-purple);
+    }
+    /* --- skills */
     /* --- home */
   </style>
 </head>
@@ -238,29 +370,101 @@
       </div>
     </section>
     <section class="experience">
-      <h2>Experiencia</h2>
-      <div class="card">
-        <img src="" alt="">
-        <div class="card_content">
-          <h3>Titulo del proyecto</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, perspiciatis saepe voluptates pariatur repellendus quae obcaecati fuga corrupti nostrum, vitae dolore qui exercitationem sit eos reiciendis totam labore rerum ipsum.</p>
-          <span class="tag">HTML 5</span>
-          <span>HTML 5</span>
-          <span>CSS 3</span>
-          <span>JavaScript</span>
-          <div class="card_content__links">
-            <ul>
-              <a href="">
-                <img src="" alt="Visitar el sitio">
-              </a>
-              <a href="">
-                <img src="" alt="Ver el Repositorio">
-              </a>
-            </ul>
-            <ul>
-              <p>Fecha</p>
-            </ul>
+      <h2 class="title">Experiencia</h2>
+      <div class="cards_container">
+        <div class="card">
+          <div class="project_img">
+            <img src="../../assets/images/Captura_trc.png" alt="">
           </div>
+          <div class="card_content">
+            <h3 class="subtitle">Titulo del proyecto</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur , vitae dolore qui exercitationem sit eos reiciendis totam labore rerum ipsum.</p>
+            <span class="tag">HTML 5</span>
+            <span class="tag">CSS 3</span>
+            <span class="tag">JavaScript</span>
+            <div class="card_content__links">
+              <ul>
+                <a href="/#here">
+                  <img src="../../assets/images/world-wide-web.png" alt="Ver el Repositorio">
+                </a>
+                <a href="/#here">
+                  <img src="../../assets/images/github-purple2.png" alt="Visitar el sitio">
+                </a>
+              </ul>
+              <ul>
+                <p>Fecha</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="favoritos">
+      <h2 class="title">Mis proyectos favoritos</h2>
+      <div class="cards_container">
+        <div class="card">
+          <div class="project_img">
+            <img src="../../assets/images/Captura_trc.png" alt="">
+          </div>
+          <div class="card_content">
+            <h3 class="subtitle">Titulo del proyecto</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur , vitae dolore qui exercitationem sit eos reiciendis totam labore rerum ipsum.</p>
+            <span class="tag">HTML 5</span>
+            <span class="tag">CSS 3</span>
+            <span class="tag">JavaScript</span>
+            <div class="card_content__links">
+              <ul>
+                <a href="/#here">
+                  <img src="../../assets/images/world-wide-web.png" alt="Ver el Repositorio">
+                </a>
+                <a href="/#here">
+                  <img src="../../assets/images/github-purple2.png" alt="Visitar el sitio">
+                </a>
+              </ul>
+              <ul>
+                <p>Fecha</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="project_img">
+            <img src="../../assets/images/Captura_trc.png" alt="">
+          </div>
+          <div class="card_content">
+            <h3 class="subtitle">Titulo del proyecto</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur , vitae dolore qui exercitationem sit eos reiciendis totam labore rerum ipsum.</p>
+            <span class="tag">HTML 5</span>
+            <span class="tag">CSS 3</span>
+            <span class="tag">JavaScript</span>
+            <div class="card_content__links">
+              <ul>
+                <a href="/#here">
+                  <img src="../../assets/images/world-wide-web.png" alt="Ver el Repositorio">
+                </a>
+                <a href="/#here">
+                  <img src="../../assets/images/github-purple2.png" alt="Visitar el sitio">
+                </a>
+              </ul>
+              <ul>
+                <p>Fecha</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="">Más proyectos => </a>
+    </section>
+    <section class="stack">
+      <h2 class="title_section">
+        STACK
+      </h2>
+      <h3 class="subtitle">Frontend</h3>
+      <div class="skills_container">
+        <div class="skill">
+          <img src="" alt="">
+          <span></span>
         </div>
       </div>
     </section>
