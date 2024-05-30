@@ -341,9 +341,9 @@
       justify-content: center;
       align-items: center;
       border-radius: var(--my-radius);
-      background-color: #de7021aa;
-      box-shadow: 0 0 2px 2px #de7021aa;
-      img {
+      background-color: #de702155;
+      box-shadow: 0 0 2px 2px #de702155;
+      img, svg {
         width: 25px;
         height: 25px;
       }
@@ -353,6 +353,59 @@
         font-size: var(--xs-text-mobile);
       }
     }
+    .css {
+      background-color: #2298F855;
+      box-shadow: 0 0 2px 2px #2298F855;
+    }
+    .javascript {
+      background-color: #FFDF0055;
+      box-shadow: 0 0 2px 2px #FFDF0055;
+    }
+    .bootstrap {
+      background-color: #5E3B7F55;
+      box-shadow: 0 0 2px 2px #5E3B7F55;
+    }
+    .react {
+      background-color: #00FFFF55;
+      box-shadow: 0 0 2px 2px #00FFFF55;
+    }
+    .node {
+      background-color: #55A44555;
+      box-shadow: 0 0 2px 2px #55A44555;
+    }
+    .git {
+      background-color: #DE4C3555;
+      box-shadow: 0 0 2px 2px #DE4C3555;
+    }
+    .github {
+      background-color: #FFFFFF55;
+      box-shadow: 0 0 2px 2px #FFFFFF55;
+      img {
+        border-radius: 50%;
+      }
+    }
+    .code {
+      background-color: #23A9F255;
+      box-shadow: 0 0 2px 2px #23A9F255;
+    }
+    .firebase {
+      background-color: #FFCC3255;
+      box-shadow: 0 0 2px 2px #FFCC3255;
+      div {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img {
+          width: 47px;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    }
+
     /* --- skills */
     /* --- home */
   </style>
@@ -484,63 +537,69 @@
       </h2>
       <h3 class="subtitle">Frontend</h3>
       <div class="skills_container">
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill html">
+          <img src="../../assets/images/html_logo.png" alt="">
           <span>HTML</span>
         </div>
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill css">
+          <img src="../../assets/images/css_logo.png" alt="">
           <span>CSS</span>
         </div>
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill javascript">
+          <img src="../../assets/images/js.png" alt="">
           <span>JavaScript</span>
         </div>
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill sass">
+          <img src="../../assets/images/sass.png" alt="">
           <span>SASS</span>
         </div>
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill bootstrap">
+          <img src="../../assets/images/bootstrap.png" alt="">
           <span>Bootstrap</span>
         </div>
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill react">
+          <svg width="100%" height="100%" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="0" cy="0" r="2" fill="aqua"></circle><g stroke="aqua" stroke-width="1" fill="none"><ellipse rx="10" ry="4.5"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse></g></svg>
           <span>React.Js</span>
         </div>
       </div>
       <h3 class="subtitle">Aprendiendo</h3>
       <div class="skills_container">
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill node">
+          <img src="../../assets/images/node-js.png" alt="">
           <span>Node.Js</span>
         </div>
         <div class="skill">
-          <img src="" alt="">
+          <img src="../../assets/images/sql_logo.png" alt="">
           <span>Sql</span>
         </div>
       </div>
       <h3 class="subtitle">Herramientas</h3>
       <div class="skills_container">
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill git">
+          <img src="../../assets/images/git-removebg.png" alt="">
           <span>Git</span>
         </div>
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill github">
+          <img src="../../assets/images/github.png" alt="">
           <span>GitHub</span>
         </div>
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill code">
+          <img src="../../assets/images/vs_code_.png" alt="">
           <span>Vs Code</span>
         </div>
-        <div class="skill">
+        <div class="skill git">
           <img src="" alt="">
           <span>Terminal</span>
         </div>
-        <div class="skill">
-          <img src="" alt="">
+        <div class="skill firebase">
+          <div>
+            <img src="../../assets/images/firebase_logo.png" alt="">
+          </div>
           <span>Firebase</span>
+        </div>
+        <div class="skill figma">
+          <img src="../../assets/images/figma.png" alt="">
+          <span>Figma</span>
         </div>
       </div>
     </section>
