@@ -116,11 +116,39 @@
     }
     /* --- header */
     /* home --- */
-    /* hero --- */ 
     .home_section {
       background-size: cover;
       background-repeat: no-repeat;
     }
+    .home_section section {
+      display: inline-block;
+      width: 90%;
+      padding-bottom: 2rem;
+    }
+    .title {
+      margin: 10px auto;
+      margin-left: 0;
+      color: var(--my-purple);
+      font-size: var(--big-title-mobile);
+      font-weight: 400;
+    }
+    .subtitle {
+      height: fit-content;
+      margin: 5px auto 0;
+      margin-top: 0;
+      margin-left: 0;
+      color: var(--my-purple);
+      font-size: var(--tiny-title-mobile);
+      font-weight: 300;
+    }
+    .title_section {
+      margin: 20px auto;
+      text-align: center;
+      color: var(--my-purple);
+      font-weight: 500;
+      font-size: large;
+    }
+    /* hero --- */ 
     .hero {
       display: block;
       width: 100%;
@@ -204,34 +232,7 @@
       }
     }
     /* --- hero */ 
-    .home_section section {
-      display: inline-block;
-      width: 90%;
-      padding-bottom: 2rem;
-    }
-    .title {
-      margin: 10px auto;
-      margin-left: 0;
-      color: var(--my-purple);
-      font-size: var(--big-title-mobile);
-      font-weight: 400;
-    }
-    .subtitle {
-      height: fit-content;
-      margin: 5px auto 0;
-      margin-top: 0;
-      margin-left: 0;
-      color: var(--my-purple);
-      font-size: var(--tiny-title-mobile);
-      font-weight: 300;
-    }
-    .title_section {
-      margin: 20px auto;
-      text-align: center;
-      color: var(--my-purple);
-      font-weight: 500;
-      font-size: large;
-    }
+    /* cards --- */ 
     .cards_container, .skills_container {
       display: flex;
       flex-wrap: wrap;
@@ -325,6 +326,7 @@
       box-shadow: 0 0 2px 1px var(--my-purple);
       background-color: #9f00ff33;
     }
+    /* cards --- */
     /* skills --- */
     .skills_container {
       max-width: 500px;

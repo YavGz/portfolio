@@ -1,43 +1,221 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Yav Gz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/images/yav_logo.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <header id="header" class="sticky">
-      <nav>
-        <ul>
-          <a class="header_logo">
-            <img class="header_logo__img" src="./assets/images/yav_logo.png" alt="Logo">
-          </a>
-          <a class="header_link header_link__home header_link__active" href="#Home">Home</a>
-        </ul>
-        <ul>
-          <a class="header_link header_link__projects" href="#Proyectos">Proyectos</a>
-          <a class="header_link header_link__about" href="#Sobre Mí">Sobre mí</a>
-        </ul>
-      </nav>
-    </header>
-    <section class="home_section section_active">
-      Home
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/images/yav_logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>Home</title>
+</head>
+<body>
+  <header id="header" class="sticky">
+    <nav>
+      <ul>
+        <a class="header_logo" href="#home">
+          <img class="header_logo__img" src="./assets/images/yav_logo.png" alt="Logo">
+        </a>
+        <a class="header_link header_link__home header_link__active" href="#home">Home</a>
+      </ul>
+      <ul>
+        <a class="header_link header_link__projects" href="#Proyectos">Proyectos</a>
+        <a class="header_link header_link__about" href="#SObreMi">Sobre mí</a>
+      </ul>
+    </nav>
+  </header>
+  <section class="home_section section_active">
+    <section class="hero">
+      <h1>Frontend Developer</h1>
+      <h1>Javier Gutierrez</h1>
+      <div class="send_email">
+        <p>gutierrez.alcantara.javier@gmail.com</p>
+        <a href="#">
+          <img src="./assets/images/send.png" alt="Enviar correo">
+        </a>
+      </div>
+      <div class="contact_info">
+        <a href="#" target="_blank">
+          <img src="./assets/images/linkedin-circle-white.png" alt="">
+        </a>
+        <a href="#" target="_blank">
+          CV
+        </a>
+      </div>
     </section>
-    <section class="projects_section">
-      Proyectos
+    <section class="experience">
+      <h2 class="title">Experiencia Laboral</h2>
+      <div class="cards_container">
+        <div class="card">
+          <div class="project_img">
+            <img src="./assets/images/trc_mobile.png" alt="">
+          </div>
+          <div class="card_content">
+            <h3 class="subtitle">TRC  MADRID</h3>
+            <p>Landing page para presentar de una manera sencilla los servicios ofrecidos por la empresa y dar un medio de contacto para los posibles clientes.</p>
+            <span class="tag">HTML 5</span>
+            <span class="tag">CSS 3</span>
+            <span class="tag">JavaScript</span>
+            <div class="card_content__links">
+              <ul>
+                <a href="https://trc-madrid.github.io/trcmadrid/" target="_blank">
+                  <img src="./assets/images/world-wide-web.png" alt="Ver el sitio">
+                </a>
+                <a href="https://github.com/TRC-MADRID/trcmadrid" target="_blank">
+                  <img src="./assets/images/github-purple2.png" alt="Visitar el repositorio">
+                </a>
+              </ul>
+              <ul>
+                <p>Dic/ 2023 - Mayo 2024</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="about_section">
-      Sobre mi
+    <section class="favoritos">
+      <h2 class="title">Mis proyectos favoritos</h2>
+      <div class="cards_container">
+        <div class="card">
+          <div class="project_img">
+            <img src="./assets/images/Todo_List.png" alt="">
+          </div>
+          <div class="card_content">
+            <h3 class="subtitle">TODO APP</h3>
+            <p>Creacion de tareas personalizadas, almaneamiento local (sin backend ni dsincronizacioón de datos)</p>
+            <span class="tag">React Js</span>
+            <span class="tag">CSS 3</span>
+            <span class="tag">JavaScript</span>
+            <div class="card_content__links">
+              <ul>
+                <a href="https://yavgz.github.io/ToDo_List/" target="_blank">
+                  <img src="./assets/images/world-wide-web.png" alt="Ver el sitio">
+                </a>
+                <a href="https://github.com/YavGz/ToDo_List">
+                  <img src="./assets/images/github-purple2.png" alt="Visitar el repositorio">
+                </a>
+              </ul>
+              <ul>
+                <p>Dic 2023</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="project_img">
+            <img src="./assets/images/Rick_and_morty.png" alt="">
+          </div>
+          <div class="card_content">
+            <h3 class="subtitle">Rick And Morty</h3>
+            <p>Consulta información relevante de los personajes de la serie</p>
+            <p>
+              información traida desde API REST a traves de un Fetching de datos
+            </p>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML 5</span>
+            <span class="tag">CSS 3</span>
+            <div class="card_content__links">
+              <ul>
+                <a href="https://yavgz.github.io/rick_and_morty_info/" target="_blank">
+                  <img src="./assets/images/world-wide-web.png" alt="Ver el sitio">
+                </a>
+                <a href="https://github.com/YavGz/rick_and_morty_info">
+                  <img src="./assets/images/github-purple2.png" alt="Visitar el repositorio">
+                </a>
+              </ul>
+              <ul>
+                <p>Feb 2023</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#Proyectos" class="more_projects subtitle">Más proyectos ---> </a>
     </section>
-    <footer>
-      <a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik - Flaticon</a>
-    </footer>
-    <!-- <script src="./index.js"></script> -->
-  </body>
+    <section class="stack">
+      <h2 class="title_section">
+        STACK
+      </h2>
+      <h3 class="subtitle">Frontend</h3>
+      <div class="skills_container">
+        <div class="skill react">
+          <svg width="100%" height="100%" viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Logo de react"><circle cx="0" cy="0" r="2" fill="aqua"></circle><g stroke="aqua" stroke-width="1" fill="none"><ellipse rx="10" ry="4.5"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(60)"></ellipse><ellipse rx="10" ry="4.5" transform="rotate(120)"></ellipse></g></svg>
+          <span>React.Js</span>
+        </div>
+        <div class="skill html">
+          <img src="./assets/images/html_logo.png" alt="Logo de html">
+          <span>HTML</span>
+        </div>
+        <div class="skill css">
+          <img src="./assets/images/css_logo.png" alt="Logo de css">
+          <span>CSS</span>
+        </div>
+        <div class="skill javascript">
+          <img src="./assets/images/js.png" alt="Logo de Javascript">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill sass">
+          <img src="./assets/images/sass.png" alt="Logo de Sass">
+          <span>SASS</span>
+        </div>
+        <div class="skill bootstrap">
+          <img src="./assets/images/bootstrap.png" alt="Logo de Bootstrap">
+          <span>Bootstrap</span>
+        </div>
+        
+      </div>
+      <h3 class="subtitle">Aprendiendo</h3>
+      <div class="skills_container">
+        <div class="skill node">
+          <img src="./assets/images/node-js.png" alt="Logo de node">
+          <span>Node.Js</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/images/sql_logo.png" alt="Logo de sql">
+          <span>Sql</span>
+        </div>
+      </div>
+      <h3 class="subtitle">Herramientas</h3>
+      <div class="skills_container">
+        <div class="skill git">
+          <img src="./assets/images/git-removebg.png" alt="Logo de Git">
+          <span>Git</span>
+        </div>
+        <div class="skill github">
+          <img src="./assets/images/github.png" alt="Logo de github">
+          <span>GitHub</span>
+        </div>
+        <div class="skill code">
+          <img src="./assets/images/vs_code_.png" alt="Logo de Visual studio code">
+          <span>Vs Code</span>
+        </div>
+        <div class="skill terminal">
+          <div class="terminal_item" alt="Icono de Terminal">
+            <span></span>
+            <span>> _</span>
+          </div>
+          <span>Terminal</span>
+        </div>
+        <div class="skill firebase">
+          <div>
+            <img src="./assets/images/firebase_logo.png" alt="Logo de firebase">
+          </div>
+          <span>Firebase</span>
+        </div>
+        <div class="skill figma">
+          <img src="./assets/images/figma.png" alt="Logo de figma">
+          <span>Figma</span>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="projects_section">
+    Proyectos
+  </section>
+  <section class="about_section">
+    Sobre mi
+  </section>
   <script src="./index.js"></script>
+</body>
 </html>
