@@ -20,12 +20,12 @@
         <a class="header_link header_link__home header_link__active" href="#home">Home</a>
       </ul>
       <ul>
-        <a class="header_link header_link__projects" href="#Proyectos">Proyectos</a>
-        <a class="header_link header_link__about" href="#SObreMi">Sobre mí</a>
+        <a class="header_link header_link__projects" href="#proyectos">Proyectos</a>
+        <a class="header_link header_link__about" href="#sobreMi">Sobre mí</a>
       </ul>
     </nav>
   </header>
-  <section class="home_section section_active">
+  <section id="home" class="home_section section_active">
     <section class="hero">
       <h1>Frontend Developer</h1>
       <h1>Javier Gutierrez</h1>
@@ -131,7 +131,7 @@
           </div>
         </div>
       </div>
-      <a href="#Proyectos" class="more_projects subtitle">Más proyectos ---> </a>
+      <a href="#proyectos" class="more_projects subtitle">Más proyectos ---> </a>
     </section>
     <section class="stack">
       <h2 class="title_section">
@@ -210,10 +210,140 @@
       </div>
     </section>
   </section>
-  <section class="projects_section">
-    Proyectos
+  <section id="proyectos" class="projects_section">
+    <div class="cards_container">
+      <div class="card">
+        <div class="project_img">
+          <img src="./assets/images/trc_mobile.png" alt="Imagen del proyecto trc madrid">
+        </div>
+        <div class="card_content">
+          <h3 class="subtitle">TRC  MADRID</h3>
+          <p>Landing page para presentar de una manera sencilla los servicios ofrecidos por la empresa y dar un medio de contacto para los posibles clientes.</p>
+          <span class="tag">HTML 5</span>
+          <span class="tag">CSS 3</span>
+          <span class="tag">JavaScript</span>
+          <div class="card_content__links">
+            <ul>
+              <a href="https://trc-madrid.github.io/trcmadrid/" target="_blank">
+                <img src="./assets/images/world-wide-web.png" alt="Ver el sitio">
+              </a>
+              <a href="https://github.com/TRC-MADRID/trcmadrid" target="_blank">
+                <img src="./assets/images/github-purple2.png" alt="Visitar el repositorio">
+              </a>
+            </ul>
+            <ul>
+              <p>Dic/ 2023 - Mayo 2024</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="project_img">
+          <img src="./assets/images/Todo_List.png" alt="Imagen del proyecto todo App">
+        </div>
+        <div class="card_content">
+          <h3 class="subtitle">TODO APP</h3>
+          <p>Creación de tareas personalizadas, almacenamiento local (sin backend ni sincronizacioón de datos).</p>
+          <span class="tag">React Js</span>
+          <span class="tag">CSS 3</span>
+          <span class="tag">JavaScript</span>
+          <div class="card_content__links">
+            <ul>
+              <a href="https://yavgz.github.io/ToDo_List/" target="_blank">
+                <img src="./assets/images/world-wide-web.png" alt="Ver el sitio">
+              </a>
+              <a href="https://github.com/YavGz/ToDo_List">
+                <img src="./assets/images/github-purple2.png" alt="Visitar el repositorio">
+              </a>
+            </ul>
+            <ul>
+              <p>Dic 2023</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="project_img">
+          <img src="./assets/images/Rick_and_morty.png" alt="Imagen del proyecto rick and morty">
+        </div>
+        <div class="card_content">
+          <h3 class="subtitle">RICK AND MORTY</h3>
+          <p>
+            Consulta información relevante de los personajes de la serie.
+          </p>
+          <p>
+            Información traida desde API REST a traves de un Fetching de datos.
+          </p>
+          <span class="tag">JavaScript</span>
+          <span class="tag">CSS 3</span>
+          <span class="tag">HTML 5</span>
+          <div class="card_content__links">
+            <ul>
+              <a href="https://yavgz.github.io/rick_and_morty_info/" target="_blank">
+                <img src="./assets/images/world-wide-web.png" alt="Ver el sitio">
+              </a>
+              <a href="https://github.com/YavGz/rick_and_morty_info" target="_blank">
+                <img src="./assets/images/github-purple2.png" alt="Visitar el repositorio">
+              </a>
+            </ul>
+            <ul>
+              <p>Feb 2023</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="project_img">
+          <img src="./assets/images/yard_sale.png" alt="Imagen del proyecto yard sale">
+        </div>
+        <div class="card_content">
+          <h3 class="subtitle">YARD SALE</h3>
+          <p>E-commerce. Pagina demo con el contenido hardcodeado.</p>
+          <p>Manipulación del DOM con JavaScript</p>
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML 5</span>
+          <span class="tag">CSS 3</span>
+          <div class="card_content__links">
+            <ul>
+              <a href="https://yavgz.github.io/forkJsYFrontedPractico/" target="_blank">
+                <img src="./assets/images/world-wide-web.png" alt="Ver el sitio">
+              </a>
+              <a href="https://github.com/YavGz/forkJsYFrontedPractico" target="_blank">
+                <img src="./assets/images/github-purple2.png" alt="Visitar el repositorio">
+              </a>
+            </ul>
+            <ul>
+              <p>May 2023</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="project_img">
+          <img src="../../assets/images/batatabit.png" alt="Imagen del proyecto batata bit">
+        </div>
+        <div class="card_content">
+          <h3 class="subtitle">BATATA BIT</h3>
+          <p>Landing page de empresa fintec de cripto activos (Demo).</p>
+          <span class="tag">HTML 5</span>
+          <span class="tag">CSS 3</span>
+          <div class="card_content__links">
+            <ul>
+              <a href="https://yavgz.github.io/Mobile-First/" target="_blank">
+                <img src="./assets/images/world-wide-web.png" alt="Ver el sitio">
+              </a>
+              <a href="https://github.com/YavGz/Mobile-First" target="_blank">
+                <img src="./assets/images/github-purple2.png" alt="Visitar el repositorio">
+              </a>
+            </ul>
+            <ul>
+              <p>DIC 2022</p>
+            </ul>
+          </div>
+        </div>
+      </div>
   </section>
-  <section class="about_section">
+  <section id="sobreMi" class="about_section">
     Sobre mi
   </section>
   <script src="./index.js"></script>
