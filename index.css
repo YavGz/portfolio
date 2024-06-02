@@ -310,6 +310,9 @@ body .section_active {
     padding-bottom: 3px;
     justify-content: space-between;
   }
+  ul:nth-child(2) p {
+    text-align: right;
+  }
 }
 .card_content__links a:hover {
   box-shadow: 0 0 2px 1px var(--my-purple);
