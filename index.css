@@ -237,7 +237,7 @@ body .section_active {
   flex-direction: row-reverse;
   max-width: 380px;
   min-width: 280px;
-  max-height: 220px;
+  max-height: 280px;
   min-height: 200px;
   border-radius: var(--my-radius);
   overflow: hidden;
@@ -436,6 +436,77 @@ body .section_active {
   padding-top: 50px;
 }
 /* --- projects */
+/* about --- */
 .about_section {
   padding-top: 50px;
+}
+.profile {
+  width: 90%;
+  max-width: 900px;
+  img {
+    float: left;
+    width: 15rem;
+    height: 15rem;
+    margin-right: 15px;
+    border-radius: 50%;
+    shape-outside: circle();
+  }
+  p {
+    text-wrap: pretty;
+    margin: 10px 0;
+    font-size: var(--normal-text-mobile);
+    font-weight: 300;
+  }
+}
+.certificates {
+  width: 90%; 
+  ul {
+  width: 100%;
+    li {
+      width: 100%;
+      min-height: 35px;
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+/* --- about */
+@media screen and (min-width: 768px) {
+  .hero,
+  .experience,
+  .favoritos,
+  .stack,
+  .cards_container,
+  .profile,
+  .certificates,
+  header nav{
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero,
+  .experience,
+  .favoritos,
+  .stack,
+  .cards_container,
+  .profile,
+  .certificates,
+  header nav{
+    max-width: 900px;
+  }
+  .profile {
+    max-width: 900px;
+  }
+  .profile p {
+    margin: 15px 0;
+  }
+  .profile img {
+    width: 220px;
+    height: 220px;
+  }
 }
