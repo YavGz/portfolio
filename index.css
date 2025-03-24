@@ -217,7 +217,6 @@ body .section_active {
     width: 50px;
     height: 100%;
     margin: 0;
-    padding: 2px;
     border-radius: var(--my-radius);
     color: white;
     background-color: #9f00ff66;
