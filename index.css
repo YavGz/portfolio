@@ -375,6 +375,7 @@ body .section_active {
     height: 25px;
   }
   span {
+    display: contents;
     width: 100%;
     text-align: center;
     font-size: var(--xs-text-mobile);
@@ -383,6 +384,9 @@ body .section_active {
 .css {
   background-color: #2298F855;
   box-shadow: 0 0 2px 2px #2298F855;
+  span{
+    display: block;
+  }
 }
 .javascript {
   background-color: #FFDF0055;
@@ -400,6 +404,11 @@ body .section_active {
   background-color: #55A44555;
   box-shadow: 0 0 2px 2px #55A44555;
 }
+.sql {
+    span{
+    display: block;
+  }
+}
 .sass {
   background-color: #CC669955;
   box-shadow: 0 0 2px 2px #CC669955;
@@ -407,12 +416,18 @@ body .section_active {
 .git {
   background-color: #DE4C3555;
   box-shadow: 0 0 2px 2px #DE4C3555;
+    span{
+    display: block;
+  }
 }
 .github {
   background-color: #FFFFFF55;
   box-shadow: 0 0 2px 2px #FFFFFF55;
   img {
     border-radius: 50%;
+  }
+  span {
+    display: block;
   }
 }
 .code {
@@ -439,6 +454,9 @@ body .section_active {
 .terminal {
   background-color: #FFFFFF55;
   box-shadow: 0 0 2px 2px #FFFFFF55;
+  span {
+    display: block;
+  }
 }
 .skill .terminal_item {
   display: flex;
@@ -595,10 +613,14 @@ body .section_active {
     }
   }
   .contact_info {
-    height: 28px;
+    width: 18rem;
+    a {
+      width: 65px;
+      height: 35px;
+    }
     a img {
-      width: 16px;
-      height: 16px;
+      width: 23px;
+      height: 22px;
     }
   }
   /* --- hero */
